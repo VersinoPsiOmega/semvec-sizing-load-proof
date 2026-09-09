@@ -1,0 +1,6 @@
+# Full development install: everything needed to actually RUN all three pillars.
+#
+# For tests only, use the far lighter requirements-test.txt (no torch, seconds
+# instead of minutes). This file pulls the complete ML stack (~6 GB).
+-r requirements.txt
+pytest>=9.1.0                                   # verified: 9.1.1

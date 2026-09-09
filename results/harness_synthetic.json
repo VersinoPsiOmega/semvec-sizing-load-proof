@@ -1,0 +1,2874 @@
+{
+  "summary": {
+    "turns_measured": 324,
+    "naive_input_tokens_per_turn": {
+      "mean": 2638.9,
+      "median": 2238.5,
+      "p90": 5271,
+      "max": 8282
+    },
+    "semvec_input_tokens_per_turn": {
+      "mean": 1740.8,
+      "median": 1607.0,
+      "p90": 2704,
+      "max": 3614
+    },
+    "total_naive_input_tokens": 855004,
+    "total_semvec_input_tokens": 564007,
+    "input_reduction_pct_overall": 34.0,
+    "break_even_turn": 1,
+    "needle_quality": {
+      "total_probes": 42,
+      "retained_in_context": 42,
+      "retention_pct": 100.0
+    }
+  },
+  "per_turn": [
+    {
+      "cid": 0,
+      "turn": 0,
+      "kind": "filler",
+      "naive_input_tokens": 897,
+      "semvec_input_tokens": 940,
+      "phase": "initialization"
+    },
+    {
+      "cid": 0,
+      "turn": 1,
+      "kind": "needle_set",
+      "naive_input_tokens": 939,
+      "semvec_input_tokens": 996,
+      "phase": "initialization"
+    },
+    {
+      "cid": 0,
+      "turn": 2,
+      "kind": "filler",
+      "naive_input_tokens": 1232,
+      "semvec_input_tokens": 1306,
+      "phase": "initialization"
+    },
+    {
+      "cid": 0,
+      "turn": 3,
+      "kind": "filler",
+      "naive_input_tokens": 1601,
+      "semvec_input_tokens": 1466,
+      "phase": "initialization"
+    },
+    {
+      "cid": 0,
+      "turn": 4,
+      "kind": "filler",
+      "naive_input_tokens": 2022,
+      "semvec_input_tokens": 1602,
+      "phase": "initialization"
+    },
+    {
+      "cid": 0,
+      "turn": 5,
+      "kind": "filler",
+      "naive_input_tokens": 2166,
+      "semvec_input_tokens": 1404,
+      "phase": "initialization"
+    },
+    {
+      "cid": 0,
+      "turn": 6,
+      "kind": "filler",
+      "naive_input_tokens": 2310,
+      "semvec_input_tokens": 1490,
+      "phase": "initialization"
+    },
+    {
+      "cid": 0,
+      "turn": 7,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2339,
+      "semvec_input_tokens": 1455,
+      "phase": "initialization"
+    },
+    {
+      "cid": 1,
+      "turn": 0,
+      "kind": "filler",
+      "naive_input_tokens": 1059,
+      "semvec_input_tokens": 1102,
+      "phase": "initialization"
+    },
+    {
+      "cid": 1,
+      "turn": 1,
+      "kind": "needle_set",
+      "naive_input_tokens": 1102,
+      "semvec_input_tokens": 999,
+      "phase": "initialization"
+    },
+    {
+      "cid": 1,
+      "turn": 2,
+      "kind": "needle_set",
+      "naive_input_tokens": 1147,
+      "semvec_input_tokens": 1060,
+      "phase": "initialization"
+    },
+    {
+      "cid": 1,
+      "turn": 3,
+      "kind": "needle_set",
+      "naive_input_tokens": 1192,
+      "semvec_input_tokens": 1119,
+      "phase": "initialization"
+    },
+    {
+      "cid": 1,
+      "turn": 4,
+      "kind": "filler",
+      "naive_input_tokens": 1431,
+      "semvec_input_tokens": 1372,
+      "phase": "initialization"
+    },
+    {
+      "cid": 1,
+      "turn": 5,
+      "kind": "filler",
+      "naive_input_tokens": 1751,
+      "semvec_input_tokens": 1532,
+      "phase": "initialization"
+    },
+    {
+      "cid": 1,
+      "turn": 6,
+      "kind": "filler",
+      "naive_input_tokens": 2016,
+      "semvec_input_tokens": 1560,
+      "phase": "initialization"
+    },
+    {
+      "cid": 1,
+      "turn": 7,
+      "kind": "filler",
+      "naive_input_tokens": 2302,
+      "semvec_input_tokens": 1666,
+      "phase": "initialization"
+    },
+    {
+      "cid": 1,
+      "turn": 8,
+      "kind": "filler",
+      "naive_input_tokens": 2450,
+      "semvec_input_tokens": 1611,
+      "phase": "initialization"
+    },
+    {
+      "cid": 1,
+      "turn": 9,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2481,
+      "semvec_input_tokens": 1574,
+      "phase": "initialization"
+    },
+    {
+      "cid": 1,
+      "turn": 10,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2504,
+      "semvec_input_tokens": 1603,
+      "phase": "exploration"
+    },
+    {
+      "cid": 1,
+      "turn": 11,
+      "kind": "filler",
+      "naive_input_tokens": 2844,
+      "semvec_input_tokens": 1955,
+      "phase": "exploration"
+    },
+    {
+      "cid": 1,
+      "turn": 12,
+      "kind": "filler",
+      "naive_input_tokens": 3084,
+      "semvec_input_tokens": 1938,
+      "phase": "exploration"
+    },
+    {
+      "cid": 1,
+      "turn": 13,
+      "kind": "filler",
+      "naive_input_tokens": 3382,
+      "semvec_input_tokens": 2082,
+      "phase": "exploration"
+    },
+    {
+      "cid": 1,
+      "turn": 14,
+      "kind": "filler",
+      "naive_input_tokens": 3621,
+      "semvec_input_tokens": 2107,
+      "phase": "resonance"
+    },
+    {
+      "cid": 1,
+      "turn": 15,
+      "kind": "filler",
+      "naive_input_tokens": 3846,
+      "semvec_input_tokens": 2172,
+      "phase": "resonance"
+    },
+    {
+      "cid": 1,
+      "turn": 16,
+      "kind": "filler",
+      "naive_input_tokens": 4031,
+      "semvec_input_tokens": 2214,
+      "phase": "resonance"
+    },
+    {
+      "cid": 1,
+      "turn": 17,
+      "kind": "filler",
+      "naive_input_tokens": 4457,
+      "semvec_input_tokens": 2537,
+      "phase": "resonance"
+    },
+    {
+      "cid": 1,
+      "turn": 18,
+      "kind": "filler",
+      "naive_input_tokens": 4758,
+      "semvec_input_tokens": 2493,
+      "phase": "resonance"
+    },
+    {
+      "cid": 1,
+      "turn": 19,
+      "kind": "filler",
+      "naive_input_tokens": 4993,
+      "semvec_input_tokens": 2509,
+      "phase": "resonance"
+    },
+    {
+      "cid": 1,
+      "turn": 20,
+      "kind": "filler",
+      "naive_input_tokens": 5222,
+      "semvec_input_tokens": 2587,
+      "phase": "resonance"
+    },
+    {
+      "cid": 1,
+      "turn": 21,
+      "kind": "filler",
+      "naive_input_tokens": 5487,
+      "semvec_input_tokens": 2704,
+      "phase": "resonance"
+    },
+    {
+      "cid": 1,
+      "turn": 22,
+      "kind": "filler",
+      "naive_input_tokens": 5681,
+      "semvec_input_tokens": 2714,
+      "phase": "resonance"
+    },
+    {
+      "cid": 1,
+      "turn": 23,
+      "kind": "filler",
+      "naive_input_tokens": 5827,
+      "semvec_input_tokens": 2746,
+      "phase": "resonance"
+    },
+    {
+      "cid": 1,
+      "turn": 24,
+      "kind": "filler",
+      "naive_input_tokens": 6099,
+      "semvec_input_tokens": 2957,
+      "phase": "resonance"
+    },
+    {
+      "cid": 1,
+      "turn": 25,
+      "kind": "filler",
+      "naive_input_tokens": 6380,
+      "semvec_input_tokens": 3048,
+      "phase": "resonance"
+    },
+    {
+      "cid": 1,
+      "turn": 26,
+      "kind": "filler",
+      "naive_input_tokens": 6568,
+      "semvec_input_tokens": 3037,
+      "phase": "resonance"
+    },
+    {
+      "cid": 1,
+      "turn": 27,
+      "kind": "filler",
+      "naive_input_tokens": 6707,
+      "semvec_input_tokens": 3070,
+      "phase": "resonance"
+    },
+    {
+      "cid": 1,
+      "turn": 28,
+      "kind": "filler",
+      "naive_input_tokens": 7036,
+      "semvec_input_tokens": 3345,
+      "phase": "resonance"
+    },
+    {
+      "cid": 1,
+      "turn": 29,
+      "kind": "filler",
+      "naive_input_tokens": 7332,
+      "semvec_input_tokens": 3395,
+      "phase": "resonance"
+    },
+    {
+      "cid": 1,
+      "turn": 30,
+      "kind": "filler",
+      "naive_input_tokens": 7513,
+      "semvec_input_tokens": 3358,
+      "phase": "resonance"
+    },
+    {
+      "cid": 1,
+      "turn": 31,
+      "kind": "filler",
+      "naive_input_tokens": 7813,
+      "semvec_input_tokens": 3521,
+      "phase": "resonance"
+    },
+    {
+      "cid": 1,
+      "turn": 32,
+      "kind": "filler",
+      "naive_input_tokens": 7959,
+      "semvec_input_tokens": 3415,
+      "phase": "resonance"
+    },
+    {
+      "cid": 1,
+      "turn": 33,
+      "kind": "filler",
+      "naive_input_tokens": 8282,
+      "semvec_input_tokens": 3614,
+      "phase": "resonance"
+    },
+    {
+      "cid": 2,
+      "turn": 0,
+      "kind": "filler",
+      "naive_input_tokens": 1066,
+      "semvec_input_tokens": 1109,
+      "phase": "initialization"
+    },
+    {
+      "cid": 2,
+      "turn": 1,
+      "kind": "needle_set",
+      "naive_input_tokens": 1107,
+      "semvec_input_tokens": 998,
+      "phase": "initialization"
+    },
+    {
+      "cid": 2,
+      "turn": 2,
+      "kind": "needle_set",
+      "naive_input_tokens": 1152,
+      "semvec_input_tokens": 1061,
+      "phase": "initialization"
+    },
+    {
+      "cid": 2,
+      "turn": 3,
+      "kind": "needle_set",
+      "naive_input_tokens": 1197,
+      "semvec_input_tokens": 1120,
+      "phase": "initialization"
+    },
+    {
+      "cid": 2,
+      "turn": 4,
+      "kind": "filler",
+      "naive_input_tokens": 1427,
+      "semvec_input_tokens": 1364,
+      "phase": "initialization"
+    },
+    {
+      "cid": 2,
+      "turn": 5,
+      "kind": "filler",
+      "naive_input_tokens": 1697,
+      "semvec_input_tokens": 1487,
+      "phase": "initialization"
+    },
+    {
+      "cid": 2,
+      "turn": 6,
+      "kind": "filler",
+      "naive_input_tokens": 1885,
+      "semvec_input_tokens": 1488,
+      "phase": "initialization"
+    },
+    {
+      "cid": 2,
+      "turn": 7,
+      "kind": "filler",
+      "naive_input_tokens": 2214,
+      "semvec_input_tokens": 1709,
+      "phase": "initialization"
+    },
+    {
+      "cid": 2,
+      "turn": 8,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2244,
+      "semvec_input_tokens": 1492,
+      "phase": "initialization"
+    },
+    {
+      "cid": 2,
+      "turn": 9,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2267,
+      "semvec_input_tokens": 1522,
+      "phase": "initialization"
+    },
+    {
+      "cid": 2,
+      "turn": 10,
+      "kind": "filler",
+      "naive_input_tokens": 2440,
+      "semvec_input_tokens": 1709,
+      "phase": "exploration"
+    },
+    {
+      "cid": 3,
+      "turn": 0,
+      "kind": "filler",
+      "naive_input_tokens": 1001,
+      "semvec_input_tokens": 1044,
+      "phase": "initialization"
+    },
+    {
+      "cid": 3,
+      "turn": 1,
+      "kind": "needle_set",
+      "naive_input_tokens": 1041,
+      "semvec_input_tokens": 993,
+      "phase": "initialization"
+    },
+    {
+      "cid": 3,
+      "turn": 2,
+      "kind": "needle_set",
+      "naive_input_tokens": 1086,
+      "semvec_input_tokens": 1057,
+      "phase": "initialization"
+    },
+    {
+      "cid": 3,
+      "turn": 3,
+      "kind": "needle_set",
+      "naive_input_tokens": 1131,
+      "semvec_input_tokens": 1116,
+      "phase": "initialization"
+    },
+    {
+      "cid": 3,
+      "turn": 4,
+      "kind": "filler",
+      "naive_input_tokens": 1305,
+      "semvec_input_tokens": 1304,
+      "phase": "initialization"
+    },
+    {
+      "cid": 3,
+      "turn": 5,
+      "kind": "filler",
+      "naive_input_tokens": 1537,
+      "semvec_input_tokens": 1443,
+      "phase": "initialization"
+    },
+    {
+      "cid": 3,
+      "turn": 6,
+      "kind": "filler",
+      "naive_input_tokens": 1860,
+      "semvec_input_tokens": 1621,
+      "phase": "initialization"
+    },
+    {
+      "cid": 3,
+      "turn": 7,
+      "kind": "needle_probe",
+      "naive_input_tokens": 1890,
+      "semvec_input_tokens": 1413,
+      "phase": "initialization"
+    },
+    {
+      "cid": 3,
+      "turn": 8,
+      "kind": "filler",
+      "naive_input_tokens": 2141,
+      "semvec_input_tokens": 1671,
+      "phase": "initialization"
+    },
+    {
+      "cid": 3,
+      "turn": 9,
+      "kind": "filler",
+      "naive_input_tokens": 2339,
+      "semvec_input_tokens": 1700,
+      "phase": "initialization"
+    },
+    {
+      "cid": 3,
+      "turn": 10,
+      "kind": "filler",
+      "naive_input_tokens": 2585,
+      "semvec_input_tokens": 1830,
+      "phase": "exploration"
+    },
+    {
+      "cid": 3,
+      "turn": 11,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2616,
+      "semvec_input_tokens": 1695,
+      "phase": "exploration"
+    },
+    {
+      "cid": 3,
+      "turn": 12,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2639,
+      "semvec_input_tokens": 1724,
+      "phase": "exploration"
+    },
+    {
+      "cid": 3,
+      "turn": 13,
+      "kind": "filler",
+      "naive_input_tokens": 2840,
+      "semvec_input_tokens": 1939,
+      "phase": "exploration"
+    },
+    {
+      "cid": 3,
+      "turn": 14,
+      "kind": "filler",
+      "naive_input_tokens": 3130,
+      "semvec_input_tokens": 2111,
+      "phase": "resonance"
+    },
+    {
+      "cid": 3,
+      "turn": 15,
+      "kind": "filler",
+      "naive_input_tokens": 3359,
+      "semvec_input_tokens": 2131,
+      "phase": "resonance"
+    },
+    {
+      "cid": 3,
+      "turn": 16,
+      "kind": "filler",
+      "naive_input_tokens": 3641,
+      "semvec_input_tokens": 2267,
+      "phase": "resonance"
+    },
+    {
+      "cid": 3,
+      "turn": 17,
+      "kind": "filler",
+      "naive_input_tokens": 3911,
+      "semvec_input_tokens": 2338,
+      "phase": "resonance"
+    },
+    {
+      "cid": 3,
+      "turn": 18,
+      "kind": "filler",
+      "naive_input_tokens": 4253,
+      "semvec_input_tokens": 2494,
+      "phase": "resonance"
+    },
+    {
+      "cid": 3,
+      "turn": 19,
+      "kind": "filler",
+      "naive_input_tokens": 4399,
+      "semvec_input_tokens": 2381,
+      "phase": "resonance"
+    },
+    {
+      "cid": 3,
+      "turn": 20,
+      "kind": "filler",
+      "naive_input_tokens": 4588,
+      "semvec_input_tokens": 2504,
+      "phase": "resonance"
+    },
+    {
+      "cid": 3,
+      "turn": 21,
+      "kind": "filler",
+      "naive_input_tokens": 4941,
+      "semvec_input_tokens": 2757,
+      "phase": "resonance"
+    },
+    {
+      "cid": 3,
+      "turn": 22,
+      "kind": "filler",
+      "naive_input_tokens": 5271,
+      "semvec_input_tokens": 2813,
+      "phase": "resonance"
+    },
+    {
+      "cid": 3,
+      "turn": 23,
+      "kind": "filler",
+      "naive_input_tokens": 5581,
+      "semvec_input_tokens": 2870,
+      "phase": "resonance"
+    },
+    {
+      "cid": 3,
+      "turn": 24,
+      "kind": "filler",
+      "naive_input_tokens": 5737,
+      "semvec_input_tokens": 2798,
+      "phase": "resonance"
+    },
+    {
+      "cid": 3,
+      "turn": 25,
+      "kind": "filler",
+      "naive_input_tokens": 5913,
+      "semvec_input_tokens": 2899,
+      "phase": "resonance"
+    },
+    {
+      "cid": 3,
+      "turn": 26,
+      "kind": "filler",
+      "naive_input_tokens": 6167,
+      "semvec_input_tokens": 3060,
+      "phase": "resonance"
+    },
+    {
+      "cid": 4,
+      "turn": 0,
+      "kind": "filler",
+      "naive_input_tokens": 1030,
+      "semvec_input_tokens": 1073,
+      "phase": "initialization"
+    },
+    {
+      "cid": 4,
+      "turn": 1,
+      "kind": "needle_set",
+      "naive_input_tokens": 1073,
+      "semvec_input_tokens": 1000,
+      "phase": "initialization"
+    },
+    {
+      "cid": 4,
+      "turn": 2,
+      "kind": "needle_set",
+      "naive_input_tokens": 1118,
+      "semvec_input_tokens": 1061,
+      "phase": "initialization"
+    },
+    {
+      "cid": 4,
+      "turn": 3,
+      "kind": "needle_set",
+      "naive_input_tokens": 1163,
+      "semvec_input_tokens": 1120,
+      "phase": "initialization"
+    },
+    {
+      "cid": 4,
+      "turn": 4,
+      "kind": "filler",
+      "naive_input_tokens": 1458,
+      "semvec_input_tokens": 1429,
+      "phase": "initialization"
+    },
+    {
+      "cid": 4,
+      "turn": 5,
+      "kind": "filler",
+      "naive_input_tokens": 1703,
+      "semvec_input_tokens": 1461,
+      "phase": "initialization"
+    },
+    {
+      "cid": 4,
+      "turn": 6,
+      "kind": "filler",
+      "naive_input_tokens": 1853,
+      "semvec_input_tokens": 1448,
+      "phase": "initialization"
+    },
+    {
+      "cid": 4,
+      "turn": 7,
+      "kind": "filler",
+      "naive_input_tokens": 2121,
+      "semvec_input_tokens": 1650,
+      "phase": "initialization"
+    },
+    {
+      "cid": 4,
+      "turn": 8,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2150,
+      "semvec_input_tokens": 1495,
+      "phase": "initialization"
+    },
+    {
+      "cid": 4,
+      "turn": 9,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2173,
+      "semvec_input_tokens": 1526,
+      "phase": "initialization"
+    },
+    {
+      "cid": 4,
+      "turn": 10,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2196,
+      "semvec_input_tokens": 1563,
+      "phase": "exploration"
+    },
+    {
+      "cid": 5,
+      "turn": 0,
+      "kind": "filler",
+      "naive_input_tokens": 1122,
+      "semvec_input_tokens": 1165,
+      "phase": "initialization"
+    },
+    {
+      "cid": 5,
+      "turn": 1,
+      "kind": "needle_set",
+      "naive_input_tokens": 1167,
+      "semvec_input_tokens": 1002,
+      "phase": "initialization"
+    },
+    {
+      "cid": 5,
+      "turn": 2,
+      "kind": "needle_set",
+      "naive_input_tokens": 1212,
+      "semvec_input_tokens": 1061,
+      "phase": "initialization"
+    },
+    {
+      "cid": 5,
+      "turn": 3,
+      "kind": "needle_set",
+      "naive_input_tokens": 1257,
+      "semvec_input_tokens": 1120,
+      "phase": "initialization"
+    },
+    {
+      "cid": 5,
+      "turn": 4,
+      "kind": "filler",
+      "naive_input_tokens": 1482,
+      "semvec_input_tokens": 1359,
+      "phase": "initialization"
+    },
+    {
+      "cid": 5,
+      "turn": 5,
+      "kind": "filler",
+      "naive_input_tokens": 1761,
+      "semvec_input_tokens": 1497,
+      "phase": "initialization"
+    },
+    {
+      "cid": 5,
+      "turn": 6,
+      "kind": "filler",
+      "naive_input_tokens": 2024,
+      "semvec_input_tokens": 1566,
+      "phase": "initialization"
+    },
+    {
+      "cid": 5,
+      "turn": 7,
+      "kind": "filler",
+      "naive_input_tokens": 2369,
+      "semvec_input_tokens": 1731,
+      "phase": "initialization"
+    },
+    {
+      "cid": 5,
+      "turn": 8,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2399,
+      "semvec_input_tokens": 1499,
+      "phase": "initialization"
+    },
+    {
+      "cid": 5,
+      "turn": 9,
+      "kind": "filler",
+      "naive_input_tokens": 2700,
+      "semvec_input_tokens": 1807,
+      "phase": "initialization"
+    },
+    {
+      "cid": 5,
+      "turn": 10,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2730,
+      "semvec_input_tokens": 1617,
+      "phase": "exploration"
+    },
+    {
+      "cid": 5,
+      "turn": 11,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2753,
+      "semvec_input_tokens": 1645,
+      "phase": "exploration"
+    },
+    {
+      "cid": 5,
+      "turn": 12,
+      "kind": "filler",
+      "naive_input_tokens": 2931,
+      "semvec_input_tokens": 1837,
+      "phase": "exploration"
+    },
+    {
+      "cid": 6,
+      "turn": 0,
+      "kind": "filler",
+      "naive_input_tokens": 1190,
+      "semvec_input_tokens": 1233,
+      "phase": "initialization"
+    },
+    {
+      "cid": 6,
+      "turn": 1,
+      "kind": "needle_set",
+      "naive_input_tokens": 1232,
+      "semvec_input_tokens": 999,
+      "phase": "initialization"
+    },
+    {
+      "cid": 6,
+      "turn": 2,
+      "kind": "needle_set",
+      "naive_input_tokens": 1277,
+      "semvec_input_tokens": 1061,
+      "phase": "initialization"
+    },
+    {
+      "cid": 6,
+      "turn": 3,
+      "kind": "needle_set",
+      "naive_input_tokens": 1322,
+      "semvec_input_tokens": 1120,
+      "phase": "initialization"
+    },
+    {
+      "cid": 6,
+      "turn": 4,
+      "kind": "filler",
+      "naive_input_tokens": 1535,
+      "semvec_input_tokens": 1347,
+      "phase": "initialization"
+    },
+    {
+      "cid": 6,
+      "turn": 5,
+      "kind": "filler",
+      "naive_input_tokens": 1823,
+      "semvec_input_tokens": 1501,
+      "phase": "initialization"
+    },
+    {
+      "cid": 6,
+      "turn": 6,
+      "kind": "filler",
+      "naive_input_tokens": 1885,
+      "semvec_input_tokens": 1356,
+      "phase": "initialization"
+    },
+    {
+      "cid": 6,
+      "turn": 7,
+      "kind": "filler",
+      "naive_input_tokens": 2161,
+      "semvec_input_tokens": 1645,
+      "phase": "initialization"
+    },
+    {
+      "cid": 6,
+      "turn": 8,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2190,
+      "semvec_input_tokens": 1480,
+      "phase": "initialization"
+    },
+    {
+      "cid": 6,
+      "turn": 9,
+      "kind": "filler",
+      "naive_input_tokens": 2264,
+      "semvec_input_tokens": 1562,
+      "phase": "initialization"
+    },
+    {
+      "cid": 6,
+      "turn": 10,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2295,
+      "semvec_input_tokens": 1607,
+      "phase": "exploration"
+    },
+    {
+      "cid": 6,
+      "turn": 11,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2318,
+      "semvec_input_tokens": 1634,
+      "phase": "exploration"
+    },
+    {
+      "cid": 6,
+      "turn": 12,
+      "kind": "filler",
+      "naive_input_tokens": 2512,
+      "semvec_input_tokens": 1842,
+      "phase": "exploration"
+    },
+    {
+      "cid": 6,
+      "turn": 13,
+      "kind": "filler",
+      "naive_input_tokens": 2912,
+      "semvec_input_tokens": 2134,
+      "phase": "resonance"
+    },
+    {
+      "cid": 6,
+      "turn": 14,
+      "kind": "filler",
+      "naive_input_tokens": 3173,
+      "semvec_input_tokens": 2077,
+      "phase": "resonance"
+    },
+    {
+      "cid": 6,
+      "turn": 15,
+      "kind": "filler",
+      "naive_input_tokens": 3384,
+      "semvec_input_tokens": 2108,
+      "phase": "resonance"
+    },
+    {
+      "cid": 6,
+      "turn": 16,
+      "kind": "filler",
+      "naive_input_tokens": 3642,
+      "semvec_input_tokens": 2235,
+      "phase": "resonance"
+    },
+    {
+      "cid": 6,
+      "turn": 17,
+      "kind": "filler",
+      "naive_input_tokens": 3933,
+      "semvec_input_tokens": 2349,
+      "phase": "resonance"
+    },
+    {
+      "cid": 6,
+      "turn": 18,
+      "kind": "filler",
+      "naive_input_tokens": 4211,
+      "semvec_input_tokens": 2415,
+      "phase": "resonance"
+    },
+    {
+      "cid": 6,
+      "turn": 19,
+      "kind": "filler",
+      "naive_input_tokens": 4498,
+      "semvec_input_tokens": 2503,
+      "phase": "resonance"
+    },
+    {
+      "cid": 6,
+      "turn": 20,
+      "kind": "filler",
+      "naive_input_tokens": 4602,
+      "semvec_input_tokens": 2401,
+      "phase": "resonance"
+    },
+    {
+      "cid": 6,
+      "turn": 21,
+      "kind": "filler",
+      "naive_input_tokens": 4855,
+      "semvec_input_tokens": 2630,
+      "phase": "resonance"
+    },
+    {
+      "cid": 6,
+      "turn": 22,
+      "kind": "filler",
+      "naive_input_tokens": 5042,
+      "semvec_input_tokens": 2644,
+      "phase": "resonance"
+    },
+    {
+      "cid": 6,
+      "turn": 23,
+      "kind": "filler",
+      "naive_input_tokens": 5295,
+      "semvec_input_tokens": 2793,
+      "phase": "resonance"
+    },
+    {
+      "cid": 6,
+      "turn": 24,
+      "kind": "filler",
+      "naive_input_tokens": 5395,
+      "semvec_input_tokens": 2722,
+      "phase": "resonance"
+    },
+    {
+      "cid": 6,
+      "turn": 25,
+      "kind": "filler",
+      "naive_input_tokens": 5638,
+      "semvec_input_tokens": 2948,
+      "phase": "resonance"
+    },
+    {
+      "cid": 6,
+      "turn": 26,
+      "kind": "filler",
+      "naive_input_tokens": 5771,
+      "semvec_input_tokens": 2921,
+      "phase": "resonance"
+    },
+    {
+      "cid": 6,
+      "turn": 27,
+      "kind": "filler",
+      "naive_input_tokens": 5815,
+      "semvec_input_tokens": 2914,
+      "phase": "resonance"
+    },
+    {
+      "cid": 6,
+      "turn": 28,
+      "kind": "filler",
+      "naive_input_tokens": 6166,
+      "semvec_input_tokens": 3279,
+      "phase": "resonance"
+    },
+    {
+      "cid": 6,
+      "turn": 29,
+      "kind": "filler",
+      "naive_input_tokens": 6413,
+      "semvec_input_tokens": 3258,
+      "phase": "resonance"
+    },
+    {
+      "cid": 6,
+      "turn": 30,
+      "kind": "filler",
+      "naive_input_tokens": 6582,
+      "semvec_input_tokens": 3264,
+      "phase": "resonance"
+    },
+    {
+      "cid": 7,
+      "turn": 0,
+      "kind": "filler",
+      "naive_input_tokens": 894,
+      "semvec_input_tokens": 937,
+      "phase": "initialization"
+    },
+    {
+      "cid": 7,
+      "turn": 1,
+      "kind": "needle_set",
+      "naive_input_tokens": 936,
+      "semvec_input_tokens": 1000,
+      "phase": "initialization"
+    },
+    {
+      "cid": 7,
+      "turn": 2,
+      "kind": "filler",
+      "naive_input_tokens": 1256,
+      "semvec_input_tokens": 1337,
+      "phase": "initialization"
+    },
+    {
+      "cid": 7,
+      "turn": 3,
+      "kind": "filler",
+      "naive_input_tokens": 1531,
+      "semvec_input_tokens": 1374,
+      "phase": "initialization"
+    },
+    {
+      "cid": 7,
+      "turn": 4,
+      "kind": "filler",
+      "naive_input_tokens": 1718,
+      "semvec_input_tokens": 1368,
+      "phase": "initialization"
+    },
+    {
+      "cid": 7,
+      "turn": 5,
+      "kind": "filler",
+      "naive_input_tokens": 1925,
+      "semvec_input_tokens": 1472,
+      "phase": "initialization"
+    },
+    {
+      "cid": 7,
+      "turn": 6,
+      "kind": "filler",
+      "naive_input_tokens": 2049,
+      "semvec_input_tokens": 1472,
+      "phase": "initialization"
+    },
+    {
+      "cid": 7,
+      "turn": 7,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2081,
+      "semvec_input_tokens": 1466,
+      "phase": "initialization"
+    },
+    {
+      "cid": 8,
+      "turn": 0,
+      "kind": "filler",
+      "naive_input_tokens": 1054,
+      "semvec_input_tokens": 1097,
+      "phase": "initialization"
+    },
+    {
+      "cid": 8,
+      "turn": 1,
+      "kind": "needle_set",
+      "naive_input_tokens": 1095,
+      "semvec_input_tokens": 997,
+      "phase": "initialization"
+    },
+    {
+      "cid": 8,
+      "turn": 2,
+      "kind": "needle_set",
+      "naive_input_tokens": 1140,
+      "semvec_input_tokens": 1060,
+      "phase": "initialization"
+    },
+    {
+      "cid": 8,
+      "turn": 3,
+      "kind": "needle_set",
+      "naive_input_tokens": 1185,
+      "semvec_input_tokens": 1119,
+      "phase": "initialization"
+    },
+    {
+      "cid": 8,
+      "turn": 4,
+      "kind": "filler",
+      "naive_input_tokens": 1353,
+      "semvec_input_tokens": 1301,
+      "phase": "initialization"
+    },
+    {
+      "cid": 8,
+      "turn": 5,
+      "kind": "filler",
+      "naive_input_tokens": 1607,
+      "semvec_input_tokens": 1468,
+      "phase": "initialization"
+    },
+    {
+      "cid": 8,
+      "turn": 6,
+      "kind": "filler",
+      "naive_input_tokens": 1926,
+      "semvec_input_tokens": 1614,
+      "phase": "initialization"
+    },
+    {
+      "cid": 8,
+      "turn": 7,
+      "kind": "filler",
+      "naive_input_tokens": 2115,
+      "semvec_input_tokens": 1569,
+      "phase": "initialization"
+    },
+    {
+      "cid": 8,
+      "turn": 8,
+      "kind": "filler",
+      "naive_input_tokens": 2259,
+      "semvec_input_tokens": 1608,
+      "phase": "initialization"
+    },
+    {
+      "cid": 8,
+      "turn": 9,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2289,
+      "semvec_input_tokens": 1576,
+      "phase": "initialization"
+    },
+    {
+      "cid": 8,
+      "turn": 10,
+      "kind": "filler",
+      "naive_input_tokens": 2508,
+      "semvec_input_tokens": 1802,
+      "phase": "exploration"
+    },
+    {
+      "cid": 8,
+      "turn": 11,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2539,
+      "semvec_input_tokens": 1694,
+      "phase": "exploration"
+    },
+    {
+      "cid": 8,
+      "turn": 12,
+      "kind": "filler",
+      "naive_input_tokens": 2849,
+      "semvec_input_tokens": 2010,
+      "phase": "exploration"
+    },
+    {
+      "cid": 8,
+      "turn": 13,
+      "kind": "filler",
+      "naive_input_tokens": 3048,
+      "semvec_input_tokens": 1976,
+      "phase": "resonance"
+    },
+    {
+      "cid": 8,
+      "turn": 14,
+      "kind": "filler",
+      "naive_input_tokens": 3213,
+      "semvec_input_tokens": 2021,
+      "phase": "resonance"
+    },
+    {
+      "cid": 8,
+      "turn": 15,
+      "kind": "filler",
+      "naive_input_tokens": 3582,
+      "semvec_input_tokens": 2304,
+      "phase": "resonance"
+    },
+    {
+      "cid": 8,
+      "turn": 16,
+      "kind": "filler",
+      "naive_input_tokens": 3782,
+      "semvec_input_tokens": 2214,
+      "phase": "resonance"
+    },
+    {
+      "cid": 8,
+      "turn": 17,
+      "kind": "filler",
+      "naive_input_tokens": 3973,
+      "semvec_input_tokens": 2290,
+      "phase": "resonance"
+    },
+    {
+      "cid": 8,
+      "turn": 18,
+      "kind": "filler",
+      "naive_input_tokens": 4230,
+      "semvec_input_tokens": 2442,
+      "phase": "resonance"
+    },
+    {
+      "cid": 8,
+      "turn": 19,
+      "kind": "filler",
+      "naive_input_tokens": 4457,
+      "semvec_input_tokens": 2492,
+      "phase": "resonance"
+    },
+    {
+      "cid": 8,
+      "turn": 20,
+      "kind": "filler",
+      "naive_input_tokens": 4717,
+      "semvec_input_tokens": 2612,
+      "phase": "resonance"
+    },
+    {
+      "cid": 8,
+      "turn": 21,
+      "kind": "filler",
+      "naive_input_tokens": 4982,
+      "semvec_input_tokens": 2700,
+      "phase": "resonance"
+    },
+    {
+      "cid": 8,
+      "turn": 22,
+      "kind": "filler",
+      "naive_input_tokens": 5143,
+      "semvec_input_tokens": 2678,
+      "phase": "resonance"
+    },
+    {
+      "cid": 8,
+      "turn": 23,
+      "kind": "filler",
+      "naive_input_tokens": 5298,
+      "semvec_input_tokens": 2752,
+      "phase": "resonance"
+    },
+    {
+      "cid": 8,
+      "turn": 24,
+      "kind": "filler",
+      "naive_input_tokens": 5574,
+      "semvec_input_tokens": 2952,
+      "phase": "resonance"
+    },
+    {
+      "cid": 8,
+      "turn": 25,
+      "kind": "filler",
+      "naive_input_tokens": 6000,
+      "semvec_input_tokens": 3191,
+      "phase": "resonance"
+    },
+    {
+      "cid": 8,
+      "turn": 26,
+      "kind": "filler",
+      "naive_input_tokens": 6230,
+      "semvec_input_tokens": 3081,
+      "phase": "resonance"
+    },
+    {
+      "cid": 8,
+      "turn": 27,
+      "kind": "filler",
+      "naive_input_tokens": 6366,
+      "semvec_input_tokens": 3071,
+      "phase": "resonance"
+    },
+    {
+      "cid": 8,
+      "turn": 28,
+      "kind": "filler",
+      "naive_input_tokens": 6557,
+      "semvec_input_tokens": 3208,
+      "phase": "resonance"
+    },
+    {
+      "cid": 9,
+      "turn": 0,
+      "kind": "filler",
+      "naive_input_tokens": 962,
+      "semvec_input_tokens": 1005,
+      "phase": "initialization"
+    },
+    {
+      "cid": 9,
+      "turn": 1,
+      "kind": "filler",
+      "naive_input_tokens": 1208,
+      "semvec_input_tokens": 1202,
+      "phase": "initialization"
+    },
+    {
+      "cid": 9,
+      "turn": 2,
+      "kind": "filler",
+      "naive_input_tokens": 1443,
+      "semvec_input_tokens": 1272,
+      "phase": "initialization"
+    },
+    {
+      "cid": 9,
+      "turn": 3,
+      "kind": "filler",
+      "naive_input_tokens": 1669,
+      "semvec_input_tokens": 1343,
+      "phase": "initialization"
+    },
+    {
+      "cid": 10,
+      "turn": 0,
+      "kind": "filler",
+      "naive_input_tokens": 1020,
+      "semvec_input_tokens": 1063,
+      "phase": "initialization"
+    },
+    {
+      "cid": 10,
+      "turn": 1,
+      "kind": "needle_set",
+      "naive_input_tokens": 1061,
+      "semvec_input_tokens": 997,
+      "phase": "initialization"
+    },
+    {
+      "cid": 10,
+      "turn": 2,
+      "kind": "needle_set",
+      "naive_input_tokens": 1106,
+      "semvec_input_tokens": 1060,
+      "phase": "initialization"
+    },
+    {
+      "cid": 10,
+      "turn": 3,
+      "kind": "needle_set",
+      "naive_input_tokens": 1151,
+      "semvec_input_tokens": 1119,
+      "phase": "initialization"
+    },
+    {
+      "cid": 10,
+      "turn": 4,
+      "kind": "filler",
+      "naive_input_tokens": 1293,
+      "semvec_input_tokens": 1275,
+      "phase": "initialization"
+    },
+    {
+      "cid": 10,
+      "turn": 5,
+      "kind": "filler",
+      "naive_input_tokens": 1570,
+      "semvec_input_tokens": 1492,
+      "phase": "initialization"
+    },
+    {
+      "cid": 10,
+      "turn": 6,
+      "kind": "filler",
+      "naive_input_tokens": 1683,
+      "semvec_input_tokens": 1406,
+      "phase": "initialization"
+    },
+    {
+      "cid": 10,
+      "turn": 7,
+      "kind": "filler",
+      "naive_input_tokens": 1939,
+      "semvec_input_tokens": 1631,
+      "phase": "initialization"
+    },
+    {
+      "cid": 10,
+      "turn": 8,
+      "kind": "needle_probe",
+      "naive_input_tokens": 1970,
+      "semvec_input_tokens": 1486,
+      "phase": "initialization"
+    },
+    {
+      "cid": 10,
+      "turn": 9,
+      "kind": "needle_probe",
+      "naive_input_tokens": 1993,
+      "semvec_input_tokens": 1515,
+      "phase": "initialization"
+    },
+    {
+      "cid": 10,
+      "turn": 10,
+      "kind": "filler",
+      "naive_input_tokens": 2206,
+      "semvec_input_tokens": 1742,
+      "phase": "exploration"
+    },
+    {
+      "cid": 10,
+      "turn": 11,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2238,
+      "semvec_input_tokens": 1642,
+      "phase": "exploration"
+    },
+    {
+      "cid": 10,
+      "turn": 12,
+      "kind": "filler",
+      "naive_input_tokens": 2510,
+      "semvec_input_tokens": 1919,
+      "phase": "exploration"
+    },
+    {
+      "cid": 10,
+      "turn": 13,
+      "kind": "filler",
+      "naive_input_tokens": 2847,
+      "semvec_input_tokens": 2067,
+      "phase": "resonance"
+    },
+    {
+      "cid": 10,
+      "turn": 14,
+      "kind": "filler",
+      "naive_input_tokens": 3041,
+      "semvec_input_tokens": 2001,
+      "phase": "resonance"
+    },
+    {
+      "cid": 10,
+      "turn": 15,
+      "kind": "filler",
+      "naive_input_tokens": 3087,
+      "semvec_input_tokens": 1938,
+      "phase": "resonance"
+    },
+    {
+      "cid": 10,
+      "turn": 16,
+      "kind": "filler",
+      "naive_input_tokens": 3450,
+      "semvec_input_tokens": 2313,
+      "phase": "resonance"
+    },
+    {
+      "cid": 11,
+      "turn": 0,
+      "kind": "filler",
+      "naive_input_tokens": 1106,
+      "semvec_input_tokens": 1149,
+      "phase": "initialization"
+    },
+    {
+      "cid": 11,
+      "turn": 1,
+      "kind": "needle_set",
+      "naive_input_tokens": 1147,
+      "semvec_input_tokens": 994,
+      "phase": "initialization"
+    },
+    {
+      "cid": 11,
+      "turn": 2,
+      "kind": "needle_set",
+      "naive_input_tokens": 1192,
+      "semvec_input_tokens": 1057,
+      "phase": "initialization"
+    },
+    {
+      "cid": 11,
+      "turn": 3,
+      "kind": "needle_set",
+      "naive_input_tokens": 1237,
+      "semvec_input_tokens": 1116,
+      "phase": "initialization"
+    },
+    {
+      "cid": 11,
+      "turn": 4,
+      "kind": "filler",
+      "naive_input_tokens": 1524,
+      "semvec_input_tokens": 1417,
+      "phase": "initialization"
+    },
+    {
+      "cid": 11,
+      "turn": 5,
+      "kind": "filler",
+      "naive_input_tokens": 1725,
+      "semvec_input_tokens": 1411,
+      "phase": "initialization"
+    },
+    {
+      "cid": 11,
+      "turn": 6,
+      "kind": "filler",
+      "naive_input_tokens": 1966,
+      "semvec_input_tokens": 1535,
+      "phase": "initialization"
+    },
+    {
+      "cid": 11,
+      "turn": 7,
+      "kind": "needle_probe",
+      "naive_input_tokens": 1996,
+      "semvec_input_tokens": 1407,
+      "phase": "initialization"
+    },
+    {
+      "cid": 11,
+      "turn": 8,
+      "kind": "filler",
+      "naive_input_tokens": 2209,
+      "semvec_input_tokens": 1627,
+      "phase": "initialization"
+    },
+    {
+      "cid": 11,
+      "turn": 9,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2239,
+      "semvec_input_tokens": 1525,
+      "phase": "initialization"
+    },
+    {
+      "cid": 11,
+      "turn": 10,
+      "kind": "filler",
+      "naive_input_tokens": 2397,
+      "semvec_input_tokens": 1690,
+      "phase": "exploration"
+    },
+    {
+      "cid": 11,
+      "turn": 11,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2429,
+      "semvec_input_tokens": 1645,
+      "phase": "exploration"
+    },
+    {
+      "cid": 11,
+      "turn": 12,
+      "kind": "filler",
+      "naive_input_tokens": 2776,
+      "semvec_input_tokens": 1997,
+      "phase": "exploration"
+    },
+    {
+      "cid": 11,
+      "turn": 13,
+      "kind": "filler",
+      "naive_input_tokens": 2947,
+      "semvec_input_tokens": 1906,
+      "phase": "resonance"
+    },
+    {
+      "cid": 11,
+      "turn": 14,
+      "kind": "filler",
+      "naive_input_tokens": 3294,
+      "semvec_input_tokens": 2164,
+      "phase": "resonance"
+    },
+    {
+      "cid": 12,
+      "turn": 0,
+      "kind": "filler",
+      "naive_input_tokens": 933,
+      "semvec_input_tokens": 976,
+      "phase": "initialization"
+    },
+    {
+      "cid": 12,
+      "turn": 1,
+      "kind": "needle_set",
+      "naive_input_tokens": 976,
+      "semvec_input_tokens": 995,
+      "phase": "initialization"
+    },
+    {
+      "cid": 12,
+      "turn": 2,
+      "kind": "needle_set",
+      "naive_input_tokens": 1021,
+      "semvec_input_tokens": 1056,
+      "phase": "initialization"
+    },
+    {
+      "cid": 12,
+      "turn": 3,
+      "kind": "needle_set",
+      "naive_input_tokens": 1066,
+      "semvec_input_tokens": 1115,
+      "phase": "initialization"
+    },
+    {
+      "cid": 12,
+      "turn": 4,
+      "kind": "filler",
+      "naive_input_tokens": 1204,
+      "semvec_input_tokens": 1267,
+      "phase": "initialization"
+    },
+    {
+      "cid": 12,
+      "turn": 5,
+      "kind": "filler",
+      "naive_input_tokens": 1387,
+      "semvec_input_tokens": 1392,
+      "phase": "initialization"
+    },
+    {
+      "cid": 12,
+      "turn": 6,
+      "kind": "filler",
+      "naive_input_tokens": 1567,
+      "semvec_input_tokens": 1470,
+      "phase": "initialization"
+    },
+    {
+      "cid": 12,
+      "turn": 7,
+      "kind": "filler",
+      "naive_input_tokens": 1689,
+      "semvec_input_tokens": 1495,
+      "phase": "initialization"
+    },
+    {
+      "cid": 12,
+      "turn": 8,
+      "kind": "filler",
+      "naive_input_tokens": 1944,
+      "semvec_input_tokens": 1710,
+      "phase": "initialization"
+    },
+    {
+      "cid": 12,
+      "turn": 9,
+      "kind": "filler",
+      "naive_input_tokens": 2272,
+      "semvec_input_tokens": 1865,
+      "phase": "initialization"
+    },
+    {
+      "cid": 12,
+      "turn": 10,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2303,
+      "semvec_input_tokens": 1651,
+      "phase": "exploration"
+    },
+    {
+      "cid": 12,
+      "turn": 11,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2326,
+      "semvec_input_tokens": 1678,
+      "phase": "exploration"
+    },
+    {
+      "cid": 12,
+      "turn": 12,
+      "kind": "filler",
+      "naive_input_tokens": 2550,
+      "semvec_input_tokens": 1916,
+      "phase": "exploration"
+    },
+    {
+      "cid": 12,
+      "turn": 13,
+      "kind": "filler",
+      "naive_input_tokens": 2752,
+      "semvec_input_tokens": 1978,
+      "phase": "exploration"
+    },
+    {
+      "cid": 12,
+      "turn": 14,
+      "kind": "filler",
+      "naive_input_tokens": 3094,
+      "semvec_input_tokens": 2201,
+      "phase": "resonance"
+    },
+    {
+      "cid": 13,
+      "turn": 0,
+      "kind": "filler",
+      "naive_input_tokens": 1173,
+      "semvec_input_tokens": 1216,
+      "phase": "initialization"
+    },
+    {
+      "cid": 13,
+      "turn": 1,
+      "kind": "needle_set",
+      "naive_input_tokens": 1216,
+      "semvec_input_tokens": 1004,
+      "phase": "initialization"
+    },
+    {
+      "cid": 13,
+      "turn": 2,
+      "kind": "needle_set",
+      "naive_input_tokens": 1261,
+      "semvec_input_tokens": 1065,
+      "phase": "initialization"
+    },
+    {
+      "cid": 13,
+      "turn": 3,
+      "kind": "needle_set",
+      "naive_input_tokens": 1306,
+      "semvec_input_tokens": 1124,
+      "phase": "initialization"
+    },
+    {
+      "cid": 13,
+      "turn": 4,
+      "kind": "filler",
+      "naive_input_tokens": 1519,
+      "semvec_input_tokens": 1351,
+      "phase": "initialization"
+    },
+    {
+      "cid": 13,
+      "turn": 5,
+      "kind": "filler",
+      "naive_input_tokens": 1732,
+      "semvec_input_tokens": 1432,
+      "phase": "initialization"
+    },
+    {
+      "cid": 13,
+      "turn": 6,
+      "kind": "filler",
+      "naive_input_tokens": 2061,
+      "semvec_input_tokens": 1631,
+      "phase": "initialization"
+    },
+    {
+      "cid": 13,
+      "turn": 7,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2092,
+      "semvec_input_tokens": 1415,
+      "phase": "initialization"
+    },
+    {
+      "cid": 13,
+      "turn": 8,
+      "kind": "filler",
+      "naive_input_tokens": 2270,
+      "semvec_input_tokens": 1599,
+      "phase": "initialization"
+    },
+    {
+      "cid": 13,
+      "turn": 9,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2301,
+      "semvec_input_tokens": 1535,
+      "phase": "initialization"
+    },
+    {
+      "cid": 13,
+      "turn": 10,
+      "kind": "filler",
+      "naive_input_tokens": 2521,
+      "semvec_input_tokens": 1761,
+      "phase": "exploration"
+    },
+    {
+      "cid": 13,
+      "turn": 11,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2552,
+      "semvec_input_tokens": 1651,
+      "phase": "exploration"
+    },
+    {
+      "cid": 13,
+      "turn": 12,
+      "kind": "filler",
+      "naive_input_tokens": 2713,
+      "semvec_input_tokens": 1818,
+      "phase": "exploration"
+    },
+    {
+      "cid": 13,
+      "turn": 13,
+      "kind": "filler",
+      "naive_input_tokens": 3036,
+      "semvec_input_tokens": 2062,
+      "phase": "resonance"
+    },
+    {
+      "cid": 13,
+      "turn": 14,
+      "kind": "filler",
+      "naive_input_tokens": 3239,
+      "semvec_input_tokens": 2020,
+      "phase": "resonance"
+    },
+    {
+      "cid": 13,
+      "turn": 15,
+      "kind": "filler",
+      "naive_input_tokens": 3484,
+      "semvec_input_tokens": 2147,
+      "phase": "resonance"
+    },
+    {
+      "cid": 13,
+      "turn": 16,
+      "kind": "filler",
+      "naive_input_tokens": 3606,
+      "semvec_input_tokens": 2105,
+      "phase": "resonance"
+    },
+    {
+      "cid": 13,
+      "turn": 17,
+      "kind": "filler",
+      "naive_input_tokens": 3743,
+      "semvec_input_tokens": 2201,
+      "phase": "resonance"
+    },
+    {
+      "cid": 14,
+      "turn": 0,
+      "kind": "filler",
+      "naive_input_tokens": 888,
+      "semvec_input_tokens": 931,
+      "phase": "initialization"
+    },
+    {
+      "cid": 14,
+      "turn": 1,
+      "kind": "needle_set",
+      "naive_input_tokens": 928,
+      "semvec_input_tokens": 994,
+      "phase": "initialization"
+    },
+    {
+      "cid": 14,
+      "turn": 2,
+      "kind": "needle_set",
+      "naive_input_tokens": 973,
+      "semvec_input_tokens": 1058,
+      "phase": "initialization"
+    },
+    {
+      "cid": 14,
+      "turn": 3,
+      "kind": "needle_set",
+      "naive_input_tokens": 1018,
+      "semvec_input_tokens": 1117,
+      "phase": "initialization"
+    },
+    {
+      "cid": 14,
+      "turn": 4,
+      "kind": "filler",
+      "naive_input_tokens": 1279,
+      "semvec_input_tokens": 1392,
+      "phase": "initialization"
+    },
+    {
+      "cid": 14,
+      "turn": 5,
+      "kind": "filler",
+      "naive_input_tokens": 1525,
+      "semvec_input_tokens": 1460,
+      "phase": "initialization"
+    },
+    {
+      "cid": 14,
+      "turn": 6,
+      "kind": "filler",
+      "naive_input_tokens": 1859,
+      "semvec_input_tokens": 1635,
+      "phase": "initialization"
+    },
+    {
+      "cid": 14,
+      "turn": 7,
+      "kind": "filler",
+      "naive_input_tokens": 2165,
+      "semvec_input_tokens": 1687,
+      "phase": "initialization"
+    },
+    {
+      "cid": 14,
+      "turn": 8,
+      "kind": "filler",
+      "naive_input_tokens": 2595,
+      "semvec_input_tokens": 1895,
+      "phase": "initialization"
+    },
+    {
+      "cid": 14,
+      "turn": 9,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2625,
+      "semvec_input_tokens": 1580,
+      "phase": "initialization"
+    },
+    {
+      "cid": 14,
+      "turn": 10,
+      "kind": "filler",
+      "naive_input_tokens": 2845,
+      "semvec_input_tokens": 1807,
+      "phase": "exploration"
+    },
+    {
+      "cid": 14,
+      "turn": 11,
+      "kind": "filler",
+      "naive_input_tokens": 3100,
+      "semvec_input_tokens": 1923,
+      "phase": "exploration"
+    },
+    {
+      "cid": 14,
+      "turn": 12,
+      "kind": "filler",
+      "naive_input_tokens": 3303,
+      "semvec_input_tokens": 1954,
+      "phase": "exploration"
+    },
+    {
+      "cid": 14,
+      "turn": 13,
+      "kind": "filler",
+      "naive_input_tokens": 3482,
+      "semvec_input_tokens": 2012,
+      "phase": "resonance"
+    },
+    {
+      "cid": 14,
+      "turn": 14,
+      "kind": "filler",
+      "naive_input_tokens": 3730,
+      "semvec_input_tokens": 2159,
+      "phase": "resonance"
+    },
+    {
+      "cid": 14,
+      "turn": 15,
+      "kind": "filler",
+      "naive_input_tokens": 4028,
+      "semvec_input_tokens": 2290,
+      "phase": "resonance"
+    },
+    {
+      "cid": 14,
+      "turn": 16,
+      "kind": "filler",
+      "naive_input_tokens": 4175,
+      "semvec_input_tokens": 2222,
+      "phase": "resonance"
+    },
+    {
+      "cid": 14,
+      "turn": 17,
+      "kind": "filler",
+      "naive_input_tokens": 4516,
+      "semvec_input_tokens": 2499,
+      "phase": "resonance"
+    },
+    {
+      "cid": 14,
+      "turn": 18,
+      "kind": "filler",
+      "naive_input_tokens": 4779,
+      "semvec_input_tokens": 2503,
+      "phase": "resonance"
+    },
+    {
+      "cid": 14,
+      "turn": 19,
+      "kind": "filler",
+      "naive_input_tokens": 5144,
+      "semvec_input_tokens": 2689,
+      "phase": "resonance"
+    },
+    {
+      "cid": 14,
+      "turn": 20,
+      "kind": "filler",
+      "naive_input_tokens": 5437,
+      "semvec_input_tokens": 2701,
+      "phase": "resonance"
+    },
+    {
+      "cid": 15,
+      "turn": 0,
+      "kind": "filler",
+      "naive_input_tokens": 1026,
+      "semvec_input_tokens": 1069,
+      "phase": "initialization"
+    },
+    {
+      "cid": 15,
+      "turn": 1,
+      "kind": "needle_set",
+      "naive_input_tokens": 1068,
+      "semvec_input_tokens": 998,
+      "phase": "initialization"
+    },
+    {
+      "cid": 15,
+      "turn": 2,
+      "kind": "needle_set",
+      "naive_input_tokens": 1113,
+      "semvec_input_tokens": 1060,
+      "phase": "initialization"
+    },
+    {
+      "cid": 15,
+      "turn": 3,
+      "kind": "needle_set",
+      "naive_input_tokens": 1158,
+      "semvec_input_tokens": 1119,
+      "phase": "initialization"
+    },
+    {
+      "cid": 15,
+      "turn": 4,
+      "kind": "filler",
+      "naive_input_tokens": 1450,
+      "semvec_input_tokens": 1425,
+      "phase": "initialization"
+    },
+    {
+      "cid": 15,
+      "turn": 5,
+      "kind": "filler",
+      "naive_input_tokens": 1883,
+      "semvec_input_tokens": 1645,
+      "phase": "initialization"
+    },
+    {
+      "cid": 15,
+      "turn": 6,
+      "kind": "filler",
+      "naive_input_tokens": 1988,
+      "semvec_input_tokens": 1399,
+      "phase": "initialization"
+    },
+    {
+      "cid": 15,
+      "turn": 7,
+      "kind": "filler",
+      "naive_input_tokens": 2252,
+      "semvec_input_tokens": 1642,
+      "phase": "initialization"
+    },
+    {
+      "cid": 15,
+      "turn": 8,
+      "kind": "filler",
+      "naive_input_tokens": 2518,
+      "semvec_input_tokens": 1728,
+      "phase": "initialization"
+    },
+    {
+      "cid": 15,
+      "turn": 9,
+      "kind": "filler",
+      "naive_input_tokens": 2724,
+      "semvec_input_tokens": 1750,
+      "phase": "initialization"
+    },
+    {
+      "cid": 15,
+      "turn": 10,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2755,
+      "semvec_input_tokens": 1656,
+      "phase": "exploration"
+    },
+    {
+      "cid": 15,
+      "turn": 11,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2778,
+      "semvec_input_tokens": 1683,
+      "phase": "exploration"
+    },
+    {
+      "cid": 15,
+      "turn": 12,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2801,
+      "semvec_input_tokens": 1720,
+      "phase": "exploration"
+    },
+    {
+      "cid": 16,
+      "turn": 0,
+      "kind": "filler",
+      "naive_input_tokens": 1099,
+      "semvec_input_tokens": 1142,
+      "phase": "initialization"
+    },
+    {
+      "cid": 16,
+      "turn": 1,
+      "kind": "needle_set",
+      "naive_input_tokens": 1140,
+      "semvec_input_tokens": 994,
+      "phase": "initialization"
+    },
+    {
+      "cid": 16,
+      "turn": 2,
+      "kind": "needle_set",
+      "naive_input_tokens": 1185,
+      "semvec_input_tokens": 1057,
+      "phase": "initialization"
+    },
+    {
+      "cid": 16,
+      "turn": 3,
+      "kind": "needle_set",
+      "naive_input_tokens": 1230,
+      "semvec_input_tokens": 1116,
+      "phase": "initialization"
+    },
+    {
+      "cid": 16,
+      "turn": 4,
+      "kind": "filler",
+      "naive_input_tokens": 1545,
+      "semvec_input_tokens": 1445,
+      "phase": "initialization"
+    },
+    {
+      "cid": 16,
+      "turn": 5,
+      "kind": "filler",
+      "naive_input_tokens": 1785,
+      "semvec_input_tokens": 1451,
+      "phase": "initialization"
+    },
+    {
+      "cid": 16,
+      "turn": 6,
+      "kind": "filler",
+      "naive_input_tokens": 2063,
+      "semvec_input_tokens": 1572,
+      "phase": "initialization"
+    },
+    {
+      "cid": 16,
+      "turn": 7,
+      "kind": "filler",
+      "naive_input_tokens": 2368,
+      "semvec_input_tokens": 1679,
+      "phase": "initialization"
+    },
+    {
+      "cid": 16,
+      "turn": 8,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2400,
+      "semvec_input_tokens": 1490,
+      "phase": "initialization"
+    },
+    {
+      "cid": 16,
+      "turn": 9,
+      "kind": "filler",
+      "naive_input_tokens": 2709,
+      "semvec_input_tokens": 1804,
+      "phase": "initialization"
+    },
+    {
+      "cid": 16,
+      "turn": 10,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2740,
+      "semvec_input_tokens": 1613,
+      "phase": "exploration"
+    },
+    {
+      "cid": 16,
+      "turn": 11,
+      "kind": "filler",
+      "naive_input_tokens": 2960,
+      "semvec_input_tokens": 1837,
+      "phase": "exploration"
+    },
+    {
+      "cid": 16,
+      "turn": 12,
+      "kind": "filler",
+      "naive_input_tokens": 3305,
+      "semvec_input_tokens": 2045,
+      "phase": "exploration"
+    },
+    {
+      "cid": 16,
+      "turn": 13,
+      "kind": "filler",
+      "naive_input_tokens": 3514,
+      "semvec_input_tokens": 1990,
+      "phase": "resonance"
+    },
+    {
+      "cid": 16,
+      "turn": 14,
+      "kind": "filler",
+      "naive_input_tokens": 3720,
+      "semvec_input_tokens": 2068,
+      "phase": "resonance"
+    },
+    {
+      "cid": 17,
+      "turn": 0,
+      "kind": "filler",
+      "naive_input_tokens": 1078,
+      "semvec_input_tokens": 1121,
+      "phase": "initialization"
+    },
+    {
+      "cid": 17,
+      "turn": 1,
+      "kind": "needle_set",
+      "naive_input_tokens": 1119,
+      "semvec_input_tokens": 993,
+      "phase": "initialization"
+    },
+    {
+      "cid": 17,
+      "turn": 2,
+      "kind": "needle_set",
+      "naive_input_tokens": 1164,
+      "semvec_input_tokens": 1056,
+      "phase": "initialization"
+    },
+    {
+      "cid": 17,
+      "turn": 3,
+      "kind": "needle_set",
+      "naive_input_tokens": 1209,
+      "semvec_input_tokens": 1115,
+      "phase": "initialization"
+    },
+    {
+      "cid": 17,
+      "turn": 4,
+      "kind": "filler",
+      "naive_input_tokens": 1327,
+      "semvec_input_tokens": 1247,
+      "phase": "initialization"
+    },
+    {
+      "cid": 17,
+      "turn": 5,
+      "kind": "filler",
+      "naive_input_tokens": 1816,
+      "semvec_input_tokens": 1702,
+      "phase": "initialization"
+    },
+    {
+      "cid": 17,
+      "turn": 6,
+      "kind": "filler",
+      "naive_input_tokens": 1987,
+      "semvec_input_tokens": 1467,
+      "phase": "initialization"
+    },
+    {
+      "cid": 17,
+      "turn": 7,
+      "kind": "filler",
+      "naive_input_tokens": 2399,
+      "semvec_input_tokens": 1789,
+      "phase": "initialization"
+    },
+    {
+      "cid": 17,
+      "turn": 8,
+      "kind": "filler",
+      "naive_input_tokens": 2600,
+      "semvec_input_tokens": 1662,
+      "phase": "initialization"
+    },
+    {
+      "cid": 17,
+      "turn": 9,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2631,
+      "semvec_input_tokens": 1574,
+      "phase": "initialization"
+    },
+    {
+      "cid": 18,
+      "turn": 0,
+      "kind": "filler",
+      "naive_input_tokens": 1001,
+      "semvec_input_tokens": 1044,
+      "phase": "initialization"
+    },
+    {
+      "cid": 18,
+      "turn": 1,
+      "kind": "needle_set",
+      "naive_input_tokens": 1043,
+      "semvec_input_tokens": 997,
+      "phase": "initialization"
+    },
+    {
+      "cid": 18,
+      "turn": 2,
+      "kind": "needle_set",
+      "naive_input_tokens": 1088,
+      "semvec_input_tokens": 1059,
+      "phase": "initialization"
+    },
+    {
+      "cid": 18,
+      "turn": 3,
+      "kind": "needle_set",
+      "naive_input_tokens": 1133,
+      "semvec_input_tokens": 1118,
+      "phase": "initialization"
+    },
+    {
+      "cid": 18,
+      "turn": 4,
+      "kind": "filler",
+      "naive_input_tokens": 1480,
+      "semvec_input_tokens": 1479,
+      "phase": "initialization"
+    },
+    {
+      "cid": 18,
+      "turn": 5,
+      "kind": "filler",
+      "naive_input_tokens": 1699,
+      "semvec_input_tokens": 1436,
+      "phase": "initialization"
+    },
+    {
+      "cid": 18,
+      "turn": 6,
+      "kind": "filler",
+      "naive_input_tokens": 1876,
+      "semvec_input_tokens": 1478,
+      "phase": "initialization"
+    },
+    {
+      "cid": 18,
+      "turn": 7,
+      "kind": "filler",
+      "naive_input_tokens": 2033,
+      "semvec_input_tokens": 1541,
+      "phase": "initialization"
+    },
+    {
+      "cid": 18,
+      "turn": 8,
+      "kind": "filler",
+      "naive_input_tokens": 2341,
+      "semvec_input_tokens": 1774,
+      "phase": "initialization"
+    },
+    {
+      "cid": 18,
+      "turn": 9,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2371,
+      "semvec_input_tokens": 1577,
+      "phase": "initialization"
+    },
+    {
+      "cid": 18,
+      "turn": 10,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2394,
+      "semvec_input_tokens": 1607,
+      "phase": "exploration"
+    },
+    {
+      "cid": 19,
+      "turn": 0,
+      "kind": "filler",
+      "naive_input_tokens": 1131,
+      "semvec_input_tokens": 1174,
+      "phase": "initialization"
+    },
+    {
+      "cid": 19,
+      "turn": 1,
+      "kind": "needle_set",
+      "naive_input_tokens": 1173,
+      "semvec_input_tokens": 998,
+      "phase": "initialization"
+    },
+    {
+      "cid": 19,
+      "turn": 2,
+      "kind": "needle_set",
+      "naive_input_tokens": 1218,
+      "semvec_input_tokens": 1060,
+      "phase": "initialization"
+    },
+    {
+      "cid": 19,
+      "turn": 3,
+      "kind": "needle_set",
+      "naive_input_tokens": 1263,
+      "semvec_input_tokens": 1119,
+      "phase": "initialization"
+    },
+    {
+      "cid": 19,
+      "turn": 4,
+      "kind": "filler",
+      "naive_input_tokens": 1496,
+      "semvec_input_tokens": 1366,
+      "phase": "initialization"
+    },
+    {
+      "cid": 19,
+      "turn": 5,
+      "kind": "filler",
+      "naive_input_tokens": 1704,
+      "semvec_input_tokens": 1422,
+      "phase": "initialization"
+    },
+    {
+      "cid": 19,
+      "turn": 6,
+      "kind": "filler",
+      "naive_input_tokens": 1880,
+      "semvec_input_tokens": 1475,
+      "phase": "initialization"
+    },
+    {
+      "cid": 19,
+      "turn": 7,
+      "kind": "filler",
+      "naive_input_tokens": 2151,
+      "semvec_input_tokens": 1652,
+      "phase": "initialization"
+    },
+    {
+      "cid": 19,
+      "turn": 8,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2182,
+      "semvec_input_tokens": 1495,
+      "phase": "initialization"
+    },
+    {
+      "cid": 19,
+      "turn": 9,
+      "kind": "needle_probe",
+      "naive_input_tokens": 2205,
+      "semvec_input_tokens": 1524,
+      "phase": "initialization"
+    },
+    {
+      "cid": 19,
+      "turn": 10,
+      "kind": "filler",
+      "naive_input_tokens": 2563,
+      "semvec_input_tokens": 1896,
+      "phase": "exploration"
+    },
+    {
+      "cid": 19,
+      "turn": 11,
+      "kind": "filler",
+      "naive_input_tokens": 2792,
+      "semvec_input_tokens": 1850,
+      "phase": "exploration"
+    },
+    {
+      "cid": 19,
+      "turn": 12,
+      "kind": "filler",
+      "naive_input_tokens": 3048,
+      "semvec_input_tokens": 1959,
+      "phase": "exploration"
+    }
+  ],
+  "needles": [
+    {
+      "cid": 0,
+      "turn": 7,
+      "code": "RX3794-A",
+      "retained_in_context": true
+    },
+    {
+      "cid": 1,
+      "turn": 9,
+      "code": "RX5609-C",
+      "retained_in_context": true
+    },
+    {
+      "cid": 1,
+      "turn": 10,
+      "code": "RX4727-B",
+      "retained_in_context": true
+    },
+    {
+      "cid": 2,
+      "turn": 8,
+      "code": "RX1207-A",
+      "retained_in_context": true
+    },
+    {
+      "cid": 2,
+      "turn": 9,
+      "code": "RX6680-C",
+      "retained_in_context": true
+    },
+    {
+      "cid": 3,
+      "turn": 7,
+      "code": "RX9367-A",
+      "retained_in_context": true
+    },
+    {
+      "cid": 3,
+      "turn": 11,
+      "code": "RX2838-B",
+      "retained_in_context": true
+    },
+    {
+      "cid": 3,
+      "turn": 12,
+      "code": "RX7011-C",
+      "retained_in_context": true
+    },
+    {
+      "cid": 4,
+      "turn": 8,
+      "code": "RX3217-A",
+      "retained_in_context": true
+    },
+    {
+      "cid": 4,
+      "turn": 9,
+      "code": "RX9082-C",
+      "retained_in_context": true
+    },
+    {
+      "cid": 4,
+      "turn": 10,
+      "code": "RX9119-B",
+      "retained_in_context": true
+    },
+    {
+      "cid": 5,
+      "turn": 8,
+      "code": "RX2689-A",
+      "retained_in_context": true
+    },
+    {
+      "cid": 5,
+      "turn": 10,
+      "code": "RX1346-B",
+      "retained_in_context": true
+    },
+    {
+      "cid": 5,
+      "turn": 11,
+      "code": "RX5980-C",
+      "retained_in_context": true
+    },
+    {
+      "cid": 6,
+      "turn": 8,
+      "code": "RX1855-A",
+      "retained_in_context": true
+    },
+    {
+      "cid": 6,
+      "turn": 10,
+      "code": "RX3434-C",
+      "retained_in_context": true
+    },
+    {
+      "cid": 6,
+      "turn": 11,
+      "code": "RX8513-B",
+      "retained_in_context": true
+    },
+    {
+      "cid": 7,
+      "turn": 7,
+      "code": "RX1563-A",
+      "retained_in_context": true
+    },
+    {
+      "cid": 8,
+      "turn": 9,
+      "code": "RX5734-C",
+      "retained_in_context": true
+    },
+    {
+      "cid": 8,
+      "turn": 11,
+      "code": "RX1764-B",
+      "retained_in_context": true
+    },
+    {
+      "cid": 10,
+      "turn": 8,
+      "code": "RX7525-A",
+      "retained_in_context": true
+    },
+    {
+      "cid": 10,
+      "turn": 9,
+      "code": "RX2635-B",
+      "retained_in_context": true
+    },
+    {
+      "cid": 10,
+      "turn": 11,
+      "code": "RX1467-C",
+      "retained_in_context": true
+    },
+    {
+      "cid": 11,
+      "turn": 7,
+      "code": "RX3431-A",
+      "retained_in_context": true
+    },
+    {
+      "cid": 11,
+      "turn": 9,
+      "code": "RX5119-C",
+      "retained_in_context": true
+    },
+    {
+      "cid": 11,
+      "turn": 11,
+      "code": "RX3326-B",
+      "retained_in_context": true
+    },
+    {
+      "cid": 12,
+      "turn": 10,
+      "code": "RX4400-C",
+      "retained_in_context": true
+    },
+    {
+      "cid": 12,
+      "turn": 11,
+      "code": "RX1935-B",
+      "retained_in_context": true
+    },
+    {
+      "cid": 13,
+      "turn": 7,
+      "code": "RX3085-A",
+      "retained_in_context": true
+    },
+    {
+      "cid": 13,
+      "turn": 9,
+      "code": "RX3353-B",
+      "retained_in_context": true
+    },
+    {
+      "cid": 13,
+      "turn": 11,
+      "code": "RX4651-C",
+      "retained_in_context": true
+    },
+    {
+      "cid": 14,
+      "turn": 9,
+      "code": "RX5267-C",
+      "retained_in_context": true
+    },
+    {
+      "cid": 15,
+      "turn": 10,
+      "code": "RX7220-A",
+      "retained_in_context": true
+    },
+    {
+      "cid": 15,
+      "turn": 11,
+      "code": "RX5968-B",
+      "retained_in_context": true
+    },
+    {
+      "cid": 15,
+      "turn": 12,
+      "code": "RX3320-C",
+      "retained_in_context": true
+    },
+    {
+      "cid": 16,
+      "turn": 8,
+      "code": "RX5509-A",
+      "retained_in_context": true
+    },
+    {
+      "cid": 16,
+      "turn": 10,
+      "code": "RX3717-C",
+      "retained_in_context": true
+    },
+    {
+      "cid": 17,
+      "turn": 9,
+      "code": "RX6142-C",
+      "retained_in_context": true
+    },
+    {
+      "cid": 18,
+      "turn": 9,
+      "code": "RX3175-A",
+      "retained_in_context": true
+    },
+    {
+      "cid": 18,
+      "turn": 10,
+      "code": "RX3940-C",
+      "retained_in_context": true
+    },
+    {
+      "cid": 19,
+      "turn": 8,
+      "code": "RX2297-B",
+      "retained_in_context": true
+    },
+    {
+      "cid": 19,
+      "turn": 9,
+      "code": "RX9975-C",
+      "retained_in_context": true
+    }
+  ]
+}

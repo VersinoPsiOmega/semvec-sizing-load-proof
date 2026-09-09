@@ -1,0 +1,48 @@
+# ---------------------------------------------------------------------------
+# Synthetic conversation profile — reference enterprise chatbot
+# ---------------------------------------------------------------------------
+# Drives the synthetic profile generator of the measurement harness (pillar 2).
+# Instead of real (privacy-sensitive) production conversations, the harness
+# deterministically generates multi-turn dialogues with the same STRUCTURAL
+# properties as the expected production profile: turns/session, context sizes,
+# 4:1 ratio.
+#
+# Operators can adapt this profile to their real one OR feed in their own
+# conversations via --custom-profile <jsonl> (air-gapped, verifiable).
+
+seed: 20260617                    # deterministic — reproducible runs
+
+conversations:
+  count: 20                       # number of synthetic sessions
+  # Turns/session: approximated lognormal-like via min/median/max.
+  turns_min: 4
+  turns_median: 12                # ASSUMPTION (see docs/METHODOLOGY.md — confirm with the operator)
+  turns_max: 40
+
+context:
+  # 4:1 in/out ratio (REFERENCE). Tokens refer to ONE fresh turn (one user
+  # message / one assistant response) — NOT to the accumulated history. The
+  # accumulated history is the naive input and grows with turns.
+  user_msg_tokens_mean: 220       # fresh user message
+  user_msg_tokens_jitter: 80
+  assistant_tokens_mean: 220      # → output/turn (4:1 refers to the accumulated total)
+  assistant_tokens_jitter: 60
+  # Optional static preamble/RAG context that would be resent on EVERY naive
+  # turn (e.g. system prompt + retrieved documents).
+  static_preamble_tokens: 800     # ASSUMPTION
+
+serializer:
+  # Aligned with the LOCOMO production config (see configs/locomo_aligned.env).
+  # top_k 30 + generous per-memory caps ≈ SEMVEC_CONTEXT_BUDGET_CHARS 20000.
+  # For short conversations fewer memories apply → little inflation; for long
+  # ones the context stays capped (the Semvec effect).
+  top_k: 30
+  max_memory_chars: 600
+  max_last_response_chars: 2000
+
+needles:
+  # Quality proxy: facts ("needles") are set early in the conversation and
+  # queried later. We measure whether the fact survives in the Semvec context
+  # (retrieval proxy, offline) or whether the LLM answers it correctly (--llm).
+  count_per_conversation: 3
+  probe_after_turns: 6            # query at the earliest N turns after setting

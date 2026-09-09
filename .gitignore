@@ -1,0 +1,22 @@
+# Secrets — NEVER commit
+.env
+.env.*
+!.env.example
+
+# Python / venv
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Runtime artefacts
+*.sock
+semvec.db
+
+# Measurement scratch — only curated evidence belongs in results/
+results/.k6_*.tmp.json
+results/_*.json

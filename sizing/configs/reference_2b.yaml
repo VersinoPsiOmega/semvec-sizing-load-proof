@@ -1,0 +1,76 @@
+# ---------------------------------------------------------------------------
+# Sizing inputs — reference enterprise workload, 2 bn tokens/month
+# ---------------------------------------------------------------------------
+# ALL numbers here are assumptions or reference-workload requirements, plus
+# documented reference values — NOTHING is hardcoded in the code. Values an
+# operator confirms replace the fields marked with "ASSUMPTION".
+#
+# Source convention:
+#   REFERENCE    = verbatim from the reference workload definition (binding)
+#   ASSUMPTION   = our default assumption, to be confirmed with the operator
+#   MEASURED     = fed in from harness/ (pillar 2) or load/ (pillar 3)
+#   UNCALIBRATED = reference value, MUST be calibrated via micro-benchmark on the target GPU
+
+workload:
+  num_users: 1500                 # REFERENCE: ~1500 FTE (of ~2000 employees)
+  # NOTE: the workload is stated as 2 bn tokens/month (2000 employees x 1m).
+  # The model deliberately computes on the 1500 FTE actually generating load
+  # = 1.5 bn tokens/month. That is the conservative choice here: a smaller
+  # input volume makes the NAIVE scenario look better, so it understates
+  # rather than inflates the saving attributed to the memory layer.
+  tokens_per_user_per_month: 1_000_000   # REFERENCE: 1m/user → 1.5 bn on the basis above
+  in_out_ratio: 4.0               # REFERENCE: 4:1 input:output
+  concurrency_avg: 200            # REFERENCE
+  concurrency_peak: 400           # REFERENCE
+  turns_per_session: 12           # ASSUMPTION (see docs/METHODOLOGY.md — confirm with the operator)
+  output_tokens_per_turn: 220     # ASSUMPTION — derived, see README
+
+  # Naive path (full-context replay): input/turn grows with conversation length.
+  naive_mean_input_tokens_per_turn: 6000   # ASSUMPTION (see docs/METHODOLOGY.md — confirm with the operator)
+  naive_peak_input_tokens_per_turn: 26000  # reference: gpt-4-turbo comparison from LOCOMO baseline
+
+  # Semvec path: bound, constant input/turn (fixed-size state + context block).
+  # MEASURED via harness/ (pillar 2). Default = documented LOCOMO baseline.
+  semvec_input_tokens_per_turn: 1750       # MEASURED/default (~1.5–2k, LOCOMO)
+
+sla:                              # all REFERENCE
+  ttft_p50_ms: 500
+  ttft_p90_ms: 1000
+  tps_p50: 25
+  tps_p90: 10
+
+infra:
+  # --- target LLM ---------------------------------------------------------
+  model_name: "llama-3.1-70b"     # ASSUMPTION (see docs/METHODOLOGY.md — confirm with the operator)
+  model_params_b: 70.0            # bn parameters
+  quantization: "fp8"             # fp16 | fp8 | int4
+  # Transformer architecture (for KV cache). Values for Llama-3.1-70B.
+  num_layers: 80
+  hidden_size: 8192
+  num_attn_heads: 64
+  num_kv_heads: 8                 # GQA → KV-head-ratio = 8/64
+  kv_dtype_bytes: 1               # fp8 KV cache = 1 byte/element (fp16 → 2)
+
+  # --- target GPU ---------------------------------------------------------
+  gpu_type: "H100-SXM-80GB"       # ASSUMPTION — replace with the GPU actually quoted
+  gpu_mem_gb: 80.0
+  gpus_per_node: 8
+  gpu_cost_eur: 30000             # ASSUMPTION — rough list-price order of magnitude per GPU
+  # CALIBRATABLE throughput constants (tokens/s per GPU) for model_name@quant.
+  # Default = rough reference value → marked as UNCALIBRATED IN THE OUTPUT until
+  # replaced from a real vLLM/TensorRT-LLM micro-benchmark on the target GPU.
+  prefill_tokens_per_s_per_gpu: 12000     # UNCALIBRATED
+  decode_tokens_per_s_per_gpu: 3000       # UNCALIBRATED
+  calibrated: false               # set to true once real measurements are entered
+
+runtime:
+  # Effective work seconds/month (configurable). 22 days × 8 h = default.
+  work_days_per_month: 22         # ASSUMPTION
+  work_hours_per_day: 8           # ASSUMPTION
+  # Peak assumption: over how many seconds a turn-arrival burst is spread
+  # (TTFT budget for prefill). Default = p90 TTFT.
+  ttft_budget_ms: 1000            # = sla.ttft_p90_ms
+  # Peak arrival model: how often each active user sends a turn (LLM
+  # generation + read time). Drives the prefill peak. ~10 s is realistic;
+  # do NOT use the 1 s TTFT budget here (that models a thundering herd).
+  peak_turn_interval_s: 10        # ASSUMPTION (≈ output 220 tok / 25 tps + read)

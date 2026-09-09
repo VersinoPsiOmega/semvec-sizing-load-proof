@@ -1,0 +1,37 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  pytest:
+    # Pillar 1 and the whole test suite are pure computation: no GPU, no
+    # network, no LLM and no Semvec licence, so CI can verify them fully.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install test dependencies
+        # The lightweight test path: no torch, no sentence-transformers. Those
+        # are only needed to actually *run* pillars 2 and 3.
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-test.txt
+      - name: Unit tests
+        run: python -m pytest tests/ -q
+      - name: Pillar 1 end-to-end (sizing model)
+        run: python sizing/sizing_model.py --config sizing/configs/reference_2b.yaml
+      - name: Documented figures still match their artefacts
+        run: python tools/check_claims.py
+
+  sanitize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publication gate (no identifying data, no secrets)
+        run: tools/sanitize_check.sh

@@ -1,0 +1,870 @@
+{
+  "config": {
+    "workers": 6,
+    "daemons": 1,
+    "model": "paraphrase-multilingual-mpnet-base-v2",
+    "dim": 768,
+    "batch_max": 32,
+    "batch_wait_ms": 5.0,
+    "rerank": false,
+    "onnx": false,
+    "peak_vus": 60,
+    "avg_vus": 30,
+    "turns_min": 6,
+    "turns_max": 10,
+    "think_ms": 10000,
+    "msg_tokens": 200,
+    "ramp": "8s",
+    "plateau": "10s",
+    "peak_hold": "45s",
+    "base_port": 18739,
+    "sample_every": 1.0,
+    "scenario": "load/k6_chat_scenario.js",
+    "output": "results/load_realistic_60vu.json"
+  },
+  "gpu_info": {
+    "gpus": [
+      {
+        "name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+        "mem_total_mib": 8151.0,
+        "driver": "591.86"
+      }
+    ]
+  },
+  "gpu": {
+    "samples": [
+      {
+        "t": 1.08,
+        "util_pct": 0.0,
+        "mem_used_mib": 1348.0,
+        "power_w": 15.23
+      },
+      {
+        "t": 2.14,
+        "util_pct": 20.0,
+        "mem_used_mib": 1348.0,
+        "power_w": 15.64
+      },
+      {
+        "t": 3.22,
+        "util_pct": 20.0,
+        "mem_used_mib": 1348.0,
+        "power_w": 15.19
+      },
+      {
+        "t": 4.27,
+        "util_pct": 0.0,
+        "mem_used_mib": 1348.0,
+        "power_w": 14.27
+      },
+      {
+        "t": 5.33,
+        "util_pct": 19.0,
+        "mem_used_mib": 1348.0,
+        "power_w": 15.72
+      },
+      {
+        "t": 6.39,
+        "util_pct": 10.0,
+        "mem_used_mib": 1348.0,
+        "power_w": 9.91
+      },
+      {
+        "t": 7.47,
+        "util_pct": 1.0,
+        "mem_used_mib": 1348.0,
+        "power_w": 14.74
+      },
+      {
+        "t": 8.52,
+        "util_pct": 16.0,
+        "mem_used_mib": 1348.0,
+        "power_w": 14.54
+      },
+      {
+        "t": 9.57,
+        "util_pct": 0.0,
+        "mem_used_mib": 1348.0,
+        "power_w": 10.32
+      },
+      {
+        "t": 10.63,
+        "util_pct": 19.0,
+        "mem_used_mib": 1348.0,
+        "power_w": 8.44
+      },
+      {
+        "t": 11.69,
+        "util_pct": 4.0,
+        "mem_used_mib": 1348.0,
+        "power_w": 14.48
+      },
+      {
+        "t": 12.73,
+        "util_pct": 13.0,
+        "mem_used_mib": 1348.0,
+        "power_w": 14.88
+      },
+      {
+        "t": 13.79,
+        "util_pct": 11.0,
+        "mem_used_mib": 1348.0,
+        "power_w": 14.06
+      },
+      {
+        "t": 14.83,
+        "util_pct": 2.0,
+        "mem_used_mib": 1348.0,
+        "power_w": 13.19
+      },
+      {
+        "t": 15.91,
+        "util_pct": 16.0,
+        "mem_used_mib": 1348.0,
+        "power_w": 30.58
+      },
+      {
+        "t": 16.97,
+        "util_pct": 11.0,
+        "mem_used_mib": 1348.0,
+        "power_w": 9.11
+      },
+      {
+        "t": 18.02,
+        "util_pct": 0.0,
+        "mem_used_mib": 1348.0,
+        "power_w": 10.51
+      },
+      {
+        "t": 19.07,
+        "util_pct": 0.0,
+        "mem_used_mib": 1348.0,
+        "power_w": 8.4
+      },
+      {
+        "t": 20.13,
+        "util_pct": 20.0,
+        "mem_used_mib": 1348.0,
+        "power_w": 15.58
+      },
+      {
+        "t": 21.18,
+        "util_pct": 21.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 18.01
+      },
+      {
+        "t": 22.24,
+        "util_pct": 5.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 19.02
+      },
+      {
+        "t": 23.28,
+        "util_pct": 20.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 19.8
+      },
+      {
+        "t": 24.34,
+        "util_pct": 22.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 18.83
+      },
+      {
+        "t": 25.4,
+        "util_pct": 1.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 16.29
+      },
+      {
+        "t": 26.46,
+        "util_pct": 32.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 16.05
+      },
+      {
+        "t": 27.51,
+        "util_pct": 11.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 13.87
+      },
+      {
+        "t": 28.57,
+        "util_pct": 0.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 14.32
+      },
+      {
+        "t": 29.62,
+        "util_pct": 0.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 14.99
+      },
+      {
+        "t": 30.68,
+        "util_pct": 20.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 15.1
+      },
+      {
+        "t": 31.73,
+        "util_pct": 21.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 18.46
+      },
+      {
+        "t": 32.79,
+        "util_pct": 17.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 19.24
+      },
+      {
+        "t": 33.85,
+        "util_pct": 5.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 18.99
+      },
+      {
+        "t": 34.9,
+        "util_pct": 19.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 18.83
+      },
+      {
+        "t": 35.96,
+        "util_pct": 10.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 18.61
+      },
+      {
+        "t": 37.03,
+        "util_pct": 1.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 11.27
+      },
+      {
+        "t": 38.09,
+        "util_pct": 3.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 12.76
+      },
+      {
+        "t": 39.14,
+        "util_pct": 3.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 13.57
+      },
+      {
+        "t": 40.19,
+        "util_pct": 11.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 15.15
+      },
+      {
+        "t": 41.25,
+        "util_pct": 0.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 15.55
+      },
+      {
+        "t": 42.3,
+        "util_pct": 23.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 19.67
+      },
+      {
+        "t": 43.36,
+        "util_pct": 21.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 19.57
+      },
+      {
+        "t": 44.41,
+        "util_pct": 3.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 13.24
+      },
+      {
+        "t": 45.47,
+        "util_pct": 22.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 19.22
+      },
+      {
+        "t": 46.53,
+        "util_pct": 21.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 11.02
+      },
+      {
+        "t": 47.59,
+        "util_pct": 2.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 13.76
+      },
+      {
+        "t": 48.64,
+        "util_pct": 9.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 14.57
+      },
+      {
+        "t": 49.71,
+        "util_pct": 19.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 14.78
+      },
+      {
+        "t": 50.75,
+        "util_pct": 11.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 14.6
+      },
+      {
+        "t": 51.82,
+        "util_pct": 0.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 19.46
+      },
+      {
+        "t": 52.87,
+        "util_pct": 3.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 14.44
+      },
+      {
+        "t": 53.94,
+        "util_pct": 8.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 14.86
+      },
+      {
+        "t": 55.01,
+        "util_pct": 0.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 11.68
+      },
+      {
+        "t": 56.14,
+        "util_pct": 5.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 12.77
+      },
+      {
+        "t": 57.2,
+        "util_pct": 10.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 10.67
+      },
+      {
+        "t": 58.28,
+        "util_pct": 0.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 14.53
+      },
+      {
+        "t": 59.36,
+        "util_pct": 20.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 14.94
+      },
+      {
+        "t": 60.42,
+        "util_pct": 11.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 15.73
+      },
+      {
+        "t": 61.48,
+        "util_pct": 21.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 17.6
+      },
+      {
+        "t": 62.55,
+        "util_pct": 11.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 20.33
+      },
+      {
+        "t": 63.6,
+        "util_pct": 40.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 20.45
+      },
+      {
+        "t": 64.67,
+        "util_pct": 6.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 17.04
+      },
+      {
+        "t": 65.73,
+        "util_pct": 3.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 15.8
+      },
+      {
+        "t": 66.79,
+        "util_pct": 3.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 14.69
+      },
+      {
+        "t": 67.84,
+        "util_pct": 3.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 13.52
+      },
+      {
+        "t": 68.9,
+        "util_pct": 11.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 15.22
+      },
+      {
+        "t": 69.95,
+        "util_pct": 0.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 15.17
+      },
+      {
+        "t": 71.0,
+        "util_pct": 13.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 15.91
+      },
+      {
+        "t": 72.05,
+        "util_pct": 39.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 19.24
+      },
+      {
+        "t": 73.1,
+        "util_pct": 11.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 19.58
+      },
+      {
+        "t": 74.16,
+        "util_pct": 6.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 18.07
+      },
+      {
+        "t": 75.21,
+        "util_pct": 6.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 15.9
+      },
+      {
+        "t": 76.26,
+        "util_pct": 3.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 15.94
+      },
+      {
+        "t": 77.31,
+        "util_pct": 3.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 14.07
+      },
+      {
+        "t": 78.36,
+        "util_pct": 11.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 15.32
+      },
+      {
+        "t": 79.44,
+        "util_pct": 19.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 15.41
+      },
+      {
+        "t": 80.49,
+        "util_pct": 0.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 23.3
+      },
+      {
+        "t": 81.55,
+        "util_pct": 19.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 22.5
+      },
+      {
+        "t": 82.61,
+        "util_pct": 5.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 17.44
+      },
+      {
+        "t": 83.66,
+        "util_pct": 4.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 15.37
+      },
+      {
+        "t": 84.71,
+        "util_pct": 3.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 15.72
+      },
+      {
+        "t": 85.78,
+        "util_pct": 3.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 14.64
+      },
+      {
+        "t": 86.83,
+        "util_pct": 0.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 14.41
+      },
+      {
+        "t": 87.88,
+        "util_pct": 0.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 14.01
+      },
+      {
+        "t": 88.94,
+        "util_pct": 20.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 14.16
+      },
+      {
+        "t": 90.0,
+        "util_pct": 17.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 12.48
+      },
+      {
+        "t": 91.06,
+        "util_pct": 0.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 15.3
+      },
+      {
+        "t": 92.12,
+        "util_pct": 0.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 13.95
+      },
+      {
+        "t": 93.17,
+        "util_pct": 3.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 17.63
+      },
+      {
+        "t": 94.23,
+        "util_pct": 6.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 14.04
+      },
+      {
+        "t": 95.28,
+        "util_pct": 21.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 17.94
+      },
+      {
+        "t": 96.33,
+        "util_pct": 0.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 17.03
+      },
+      {
+        "t": 97.39,
+        "util_pct": 11.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 14.87
+      },
+      {
+        "t": 98.44,
+        "util_pct": 0.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 11.78
+      },
+      {
+        "t": 99.5,
+        "util_pct": 0.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 13.49
+      },
+      {
+        "t": 100.59,
+        "util_pct": 20.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 13.19
+      },
+      {
+        "t": 101.64,
+        "util_pct": 20.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 14.83
+      },
+      {
+        "t": 102.69,
+        "util_pct": 3.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 14.72
+      },
+      {
+        "t": 103.75,
+        "util_pct": 0.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 12.38
+      },
+      {
+        "t": 104.8,
+        "util_pct": 11.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 11.32
+      },
+      {
+        "t": 105.86,
+        "util_pct": 0.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 10.68
+      },
+      {
+        "t": 106.43,
+        "util_pct": 0.0,
+        "mem_used_mib": 1350.0,
+        "power_w": 7.84
+      }
+    ],
+    "util_pct": {
+      "mean": 9.6,
+      "peak": 40.0
+    },
+    "mem_used_mib": {
+      "mean": 1349.6,
+      "peak": 1350.0
+    },
+    "power_w": {
+      "mean": 15.3,
+      "peak": 30.58
+    }
+  },
+  "resources": {
+    "rss_mb": {
+      "peak": 2367.5,
+      "mean": 2366.2
+    },
+    "cpu_pct": {
+      "peak": 33.4,
+      "mean": 17.2,
+      "cores": 24
+    }
+  },
+  "k6": {
+    "root_group": {
+      "path": "",
+      "id": "d41d8cd98f00b204e9800998ecf8427e",
+      "groups": {},
+      "checks": {
+        "create 200": {
+          "path": "::create 200",
+          "id": "3b3864655d7bdb04926571b6f6406bf6",
+          "passes": 75,
+          "fails": 0,
+          "name": "create 200"
+        },
+        "create has session_id": {
+          "path": "::create has session_id",
+          "id": "f317f27151369f3e8af7578e908a640d",
+          "passes": 75,
+          "fails": 0,
+          "name": "create has session_id"
+        },
+        "run 200": {
+          "name": "run 200",
+          "path": "::run 200",
+          "id": "774316678aca99e1ea8fddef0efa5e6e",
+          "passes": 534,
+          "fails": 0
+        },
+        "delete 200": {
+          "name": "delete 200",
+          "path": "::delete 200",
+          "id": "af4feca1c2c2f59fc45437b5fd44da76",
+          "passes": 36,
+          "fails": 0
+        }
+      },
+      "name": ""
+    },
+    "metrics": {
+      "http_req_failed": {
+        "passes": 0,
+        "fails": 645,
+        "value": 0
+      },
+      "data_received": {
+        "count": 236592,
+        "rate": 2230.7607815340157
+      },
+      "action_run_ms": {
+        "avg": 38.27669705805241,
+        "med": 35.71327599999999,
+        "p(90)": 54.6096056,
+        "p(95)": 57.849603699999996,
+        "p(99)": 72.89770052999998,
+        "max": 86.91918,
+        "min": 17.122007,
+        "thresholds": {
+          "p(90)<250": false
+        }
+      },
+      "http_req_duration{expected_response:true}": {
+        "p(99)": 72.4500276,
+        "max": 86.91918,
+        "min": 1.455665,
+        "avg": 32.17296199379844,
+        "med": 34.675134,
+        "p(90)": 54.2122896,
+        "p(95)": 57.26804919999999
+      },
+      "data_sent": {
+        "count": 1236648,
+        "rate": 11660.013267407508
+      },
+      "http_req_failed{action:run}": {
+        "passes": 0,
+        "fails": 534,
+        "thresholds": {
+          "rate<0.01": false
+        },
+        "value": 0
+      },
+      "completed_turns": {
+        "count": 534,
+        "rate": 5.034938870879675
+      },
+      "iteration_duration": {
+        "min": 60202.159996,
+        "avg": 73081.6250976389,
+        "med": 70281.5063485,
+        "p(90)": 90371.3375905,
+        "p(95)": 92884.36356375,
+        "p(99)": 100400.1246045,
+        "max": 100413.855675
+      },
+      "http_reqs": {
+        "count": 645,
+        "rate": 6.081527287860283
+      },
+      "http_req_blocked": {
+        "p(90)": 0.361759,
+        "p(95)": 0.3973571999999998,
+        "p(99)": 0.4828920399999991,
+        "max": 0.653337,
+        "min": 0.116661,
+        "avg": 0.26268845581395356,
+        "med": 0.250067
+      },
+      "vus_max": {
+        "value": 60,
+        "min": 60,
+        "max": 60
+      },
+      "iterations": {
+        "count": 36,
+        "rate": 0.33943408118289947
+      },
+      "http_req_receiving": {
+        "p(90)": 0.176328,
+        "p(95)": 0.20241519999999985,
+        "p(99)": 0.24851675999999975,
+        "max": 1.251986,
+        "min": 0.048609,
+        "avg": 0.1296070992248062,
+        "med": 0.123268
+      },
+      "http_req_connecting": {
+        "p(90)": 0.2674454,
+        "p(95)": 0.28738279999999994,
+        "p(99)": 0.37800623999999816,
+        "max": 0.5001,
+        "min": 0.0867,
+        "avg": 0.19140402790697664,
+        "med": 0.181267
+      },
+      "http_req_sending": {
+        "avg": 0.07278834728682174,
+        "med": 0.065322,
+        "p(90)": 0.11164780000000002,
+        "p(95)": 0.13129419999999994,
+        "p(99)": 0.18352127999999981,
+        "max": 0.259616,
+        "min": 0.011884
+      },
+      "vus": {
+        "min": 3,
+        "max": 60,
+        "value": 25
+      },
+      "http_req_waiting": {
+        "avg": 31.970566547286793,
+        "med": 34.522247,
+        "p(90)": 53.999505,
+        "p(95)": 56.88129219999998,
+        "p(99)": 72.24283096,
+        "max": 86.697774,
+        "min": 1.342814
+      },
+      "action_delete_ms": {
+        "min": 1.455665,
+        "avg": 2.4765877500000006,
+        "med": 1.8900614999999998,
+        "p(90)": 4.3168,
+        "p(95)": 4.808569,
+        "p(99)": 5.853574649999999,
+        "max": 6.123215
+      },
+      "http_req_tls_handshaking": {
+        "max": 0,
+        "min": 0,
+        "avg": 0,
+        "med": 0,
+        "p(90)": 0,
+        "p(95)": 0,
+        "p(99)": 0
+      },
+      "checks": {
+        "passes": 720,
+        "fails": 0,
+        "value": 1
+      },
+      "action_create_ms": {
+        "p(99)": 17.827423740000135,
+        "max": 37.751035,
+        "min": 1.516494,
+        "avg": 2.968627973333333,
+        "med": 2.218834,
+        "p(90)": 3.8679936000000006,
+        "p(95)": 4.7681100999999995
+      },
+      "completed_sessions": {
+        "count": 36,
+        "rate": 0.33943408118289947
+      },
+      "http_req_duration": {
+        "min": 1.455665,
+        "avg": 32.17296199379844,
+        "med": 34.675134,
+        "p(90)": 54.2122896,
+        "p(95)": 57.26804919999999,
+        "p(99)": 72.4500276,
+        "max": 86.91918
+      }
+    }
+  }
+}

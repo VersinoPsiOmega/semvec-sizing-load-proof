@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.6-27B",
+  "gpu": "H100-NVL-94GB",
+  "num_gpus": 1,
+  "concurrency": 48,
+  "prompt_tokens_each": 2000,
+  "gen_tokens_each": 256,
+  "prefill_tokens_per_s_per_gpu": 7810,
+  "decode_tokens_per_s_per_gpu": 1970,
+  "semvec": "0.8.8",
+  "source": "live vLLM endpoint, sizing/calibrate_vllm.py",
+  "note": "Measured over a WAN link, so the round-trip is included and the figures are conservative.",
+  "date": "2026-09-08"
+}

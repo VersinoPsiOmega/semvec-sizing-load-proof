@@ -1,0 +1,71 @@
+# ---------------------------------------------------------------------------
+# Sizing inputs — reference enterprise workload, 2 bn tokens/month
+# CALIBRATED profile: Qwen3.6-27B on a live H100 NVL (measured 2026-06-18).
+# ---------------------------------------------------------------------------
+# Workload/SLA are the reference workload (model-independent). The infra block is
+# the model actually deployed on an H100-NVL-class card, with prefill/decode
+# throughput MEASURED via sizing/calibrate_vllm.py against the live vLLM endpoint.
+#
+# Source convention:
+#   REFERENCE  = verbatim from the reference workload definition (binding)
+#   ASSUMPTION = our default assumption, to be confirmed with the operator
+#   MEASURED   = real measurement (calibrate_vllm.py / harness / load)
+
+workload:
+  num_users: 1500                 # REFERENCE: ~1500 FTE (of ~2000 employees)
+  # NOTE: the workload is stated as 2 bn tokens/month (2000 employees x 1m).
+  # The model deliberately computes on the 1500 FTE actually generating load
+  # = 1.5 bn tokens/month. That is the conservative choice here: a smaller
+  # input volume makes the NAIVE scenario look better, so it understates
+  # rather than inflates the saving attributed to the memory layer.
+  tokens_per_user_per_month: 1_000_000   # REFERENCE: 1m/user → 1.5 bn on the basis above
+  in_out_ratio: 4.0               # REFERENCE: 4:1 input:output
+  concurrency_avg: 200            # REFERENCE
+  concurrency_peak: 400           # REFERENCE
+  turns_per_session: 12           # ASSUMPTION (see docs/METHODOLOGY.md — confirm with the operator)
+  output_tokens_per_turn: 220     # ASSUMPTION — derived, see README
+
+  naive_mean_input_tokens_per_turn: 6000   # ASSUMPTION (see docs/METHODOLOGY.md — confirm with the operator)
+  naive_peak_input_tokens_per_turn: 26000  # reference: gpt-4-turbo comparison from LOCOMO baseline
+  semvec_input_tokens_per_turn: 1424       # MEASURED (tuned LOCOMO full suite: hybrid + cross-encoder rerank)
+
+sla:                              # all REFERENCE
+  ttft_p50_ms: 500
+  ttft_p90_ms: 1000
+  tps_p50: 25
+  tps_p90: 10
+
+infra:
+  # --- target LLM (the model actually deployed on the H100) ---------------
+  model_name: "Qwen/Qwen3.6-27B"
+  model_params_b: 27.0
+  quantization: "fp16"            # ASSUMPTION — 27B weights fit either way on a 94 GiB H100
+  # Transformer architecture (for KV cache). ASSUMPTION — Qwen3-32B-class values;
+  # verify against the real Qwen3.6-27B config.json (affects only the kv-mem bound,
+  # which is not the binding constraint here).
+  num_layers: 64                  # ASSUMPTION
+  hidden_size: 5120               # ASSUMPTION
+  num_attn_heads: 40              # ASSUMPTION
+  num_kv_heads: 8                 # ASSUMPTION (GQA)
+  kv_dtype_bytes: 2               # fp16 KV cache
+
+  # --- target GPU (the live one we measured) ------------------------------
+  gpu_type: "H100-NVL-94GB"
+  gpu_mem_gb: 94.0                # 95830 MiB ≈ 93.6 GiB
+  gpus_per_node: 8
+  gpu_cost_eur: 32000             # ASSUMPTION — rough list-price order of magnitude per H100 NVL
+  # MEASURED on the live H100 NVL via calibrate_vllm.py (Qwen3.6-27B, 2026-06-18,
+  # concurrency 48). prefill plateaus ~8.2k t/s (compute-bound); decode ~2.2k t/s
+  # at concurrency 48 and still climbing with more concurrency → conservative.
+  prefill_tokens_per_s_per_gpu: 7810      # MEASURED
+  decode_tokens_per_s_per_gpu: 1970       # MEASURED
+  calibrated: true
+
+runtime:
+  work_days_per_month: 22         # ASSUMPTION
+  work_hours_per_day: 8           # ASSUMPTION
+  ttft_budget_ms: 1000            # = sla.ttft_p90_ms
+  # Peak arrival model: how often each active user sends a turn (LLM
+  # generation + read time). Drives the prefill peak. ~10 s is realistic;
+  # do NOT use the 1 s TTFT budget here (that models a thundering herd).
+  peak_turn_interval_s: 10        # ASSUMPTION (≈ output 220 tok / 25 tps + read)

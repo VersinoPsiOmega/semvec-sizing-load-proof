@@ -1,0 +1,682 @@
+{
+  "summary": {
+    "items": 60,
+    "naive_feasible": 38,
+    "naive_infeasible": 22,
+    "naive_acc_feasible": 0.553,
+    "semvec_acc_feasible": 0.447,
+    "semvec_acc_all": 0.417,
+    "naive_input_tokens_mean": 71832,
+    "semvec_input_tokens_mean": 1895,
+    "input_reduction_pct_feasible": 97.4,
+    "context_tokens_mean": 249498,
+    "per_length": {
+      "short": {
+        "n": 20,
+        "naive_feasible": 20,
+        "naive_acc": 0.55,
+        "semvec_acc": 0.35
+      },
+      "medium": {
+        "n": 20,
+        "naive_feasible": 17,
+        "naive_acc": 0.588,
+        "semvec_acc": 0.5
+      },
+      "long": {
+        "n": 20,
+        "naive_feasible": 1,
+        "naive_acc": 0.0,
+        "semvec_acc": 0.4
+      }
+    },
+    "wall_seconds": 1517.2,
+    "measured_with": {
+      "semvec": "0.8.8",
+      "reader": "Qwen/Qwen3.6-27B",
+      "gpu": "H100-NVL-94GB via vLLM",
+      "embedder": "paraphrase-multilingual-mpnet-base-v2 (768)",
+      "dataset": "LongBench-v2 (zai-org/LongBench-v2), 60 items: 20 short / 20 medium / 20 long"
+    }
+  },
+  "rows": [
+    {
+      "id": "66f36490821e116aacb2cc22",
+      "domain": "Single-Document QA",
+      "length": "short",
+      "gold": "D",
+      "context_tokens": 36053,
+      "semvec_input_tokens": 2214,
+      "semvec_pred": "B",
+      "naive_input_tokens": 36180,
+      "naive_pred": "A"
+    },
+    {
+      "id": "66ebed525a08c7b9b35e1cb4",
+      "domain": "Single-Document QA",
+      "length": "short",
+      "gold": "B",
+      "context_tokens": 23719,
+      "semvec_input_tokens": 1959,
+      "semvec_pred": "A",
+      "naive_input_tokens": 23884,
+      "naive_pred": "A"
+    },
+    {
+      "id": "671b3cabbb02136c067d5252",
+      "domain": "Long-dialogue History Understanding",
+      "length": "short",
+      "gold": "B",
+      "context_tokens": 42136,
+      "semvec_input_tokens": 1716,
+      "semvec_pred": "D",
+      "naive_input_tokens": 42203,
+      "naive_pred": "B"
+    },
+    {
+      "id": "66f599ef821e116aacb34099",
+      "domain": "Multi-Document QA",
+      "length": "short",
+      "gold": "B",
+      "context_tokens": 45269,
+      "semvec_input_tokens": 2521,
+      "semvec_pred": "C",
+      "naive_input_tokens": 45454,
+      "naive_pred": "C"
+    },
+    {
+      "id": "66f39aa7821e116aacb2da76",
+      "domain": "Single-Document QA",
+      "length": "short",
+      "gold": "B",
+      "context_tokens": 15410,
+      "semvec_input_tokens": 1921,
+      "semvec_pred": "B",
+      "naive_input_tokens": 15705,
+      "naive_pred": "B"
+    },
+    {
+      "id": "66f958b3bb02136c067c5219",
+      "domain": "Single-Document QA",
+      "length": "short",
+      "gold": "C",
+      "context_tokens": 22822,
+      "semvec_input_tokens": 2054,
+      "semvec_pred": "B",
+      "naive_input_tokens": 23123,
+      "naive_pred": "C"
+    },
+    {
+      "id": "66f3c1ab821e116aacb2ead1",
+      "domain": "Multi-Document QA",
+      "length": "short",
+      "gold": "D",
+      "context_tokens": 45913,
+      "semvec_input_tokens": 2021,
+      "semvec_pred": "D",
+      "naive_input_tokens": 46264,
+      "naive_pred": "D"
+    },
+    {
+      "id": "66f618f1bb02136c067c16f9",
+      "domain": "Single-Document QA",
+      "length": "short",
+      "gold": "D",
+      "context_tokens": 17566,
+      "semvec_input_tokens": 2519,
+      "semvec_pred": "B",
+      "naive_input_tokens": 17707,
+      "naive_pred": "B"
+    },
+    {
+      "id": "66fcf2f2bb02136c067c9169",
+      "domain": "Multi-Document QA",
+      "length": "short",
+      "gold": "B",
+      "context_tokens": 22218,
+      "semvec_input_tokens": 1987,
+      "semvec_pred": "B",
+      "naive_input_tokens": 22534,
+      "naive_pred": "B"
+    },
+    {
+      "id": "66eefe85821e116aacb228dc",
+      "domain": "Multi-Document QA",
+      "length": "short",
+      "gold": "A",
+      "context_tokens": 29192,
+      "semvec_input_tokens": 2301,
+      "semvec_pred": "A",
+      "naive_input_tokens": 29428,
+      "naive_pred": "A"
+    },
+    {
+      "id": "66f78ecfbb02136c067c2f12",
+      "domain": "Multi-Document QA",
+      "length": "short",
+      "gold": "B",
+      "context_tokens": 14673,
+      "semvec_input_tokens": 1836,
+      "semvec_pred": "B",
+      "naive_input_tokens": 14810,
+      "naive_pred": "B"
+    },
+    {
+      "id": "6703a0ecbb02136c067cd11b",
+      "domain": "Long Structured Data Understanding",
+      "length": "short",
+      "gold": "A",
+      "context_tokens": 65345,
+      "semvec_input_tokens": 1195,
+      "semvec_pred": "A",
+      "naive_input_tokens": 65596,
+      "naive_pred": "A"
+    },
+    {
+      "id": "66ebc4af5a08c7b9b35dede0",
+      "domain": "Single-Document QA",
+      "length": "short",
+      "gold": "A",
+      "context_tokens": 22629,
+      "semvec_input_tokens": 1942,
+      "semvec_pred": "B",
+      "naive_input_tokens": 22836,
+      "naive_pred": "B"
+    },
+    {
+      "id": "6719bc01bb02136c067d43fa",
+      "domain": "Long-dialogue History Understanding",
+      "length": "short",
+      "gold": "D",
+      "context_tokens": 23061,
+      "semvec_input_tokens": 2071,
+      "semvec_pred": "C",
+      "naive_input_tokens": 23129,
+      "naive_pred": "B"
+    },
+    {
+      "id": "66ed3148821e116aacb1f2ce",
+      "domain": "Single-Document QA",
+      "length": "short",
+      "gold": "B",
+      "context_tokens": 43277,
+      "semvec_input_tokens": 448,
+      "semvec_pred": "C",
+      "naive_input_tokens": 43506,
+      "naive_pred": "B"
+    },
+    {
+      "id": "6704a83dbb02136c067cde1b",
+      "domain": "Single-Document QA",
+      "length": "short",
+      "gold": "B",
+      "context_tokens": 14679,
+      "semvec_input_tokens": 1948,
+      "semvec_pred": "D",
+      "naive_input_tokens": 15042,
+      "naive_pred": "D"
+    },
+    {
+      "id": "66ebd5125a08c7b9b35e0616",
+      "domain": "Single-Document QA",
+      "length": "short",
+      "gold": "C",
+      "context_tokens": 19627,
+      "semvec_input_tokens": 1815,
+      "semvec_pred": "C",
+      "naive_input_tokens": 19729,
+      "naive_pred": "C"
+    },
+    {
+      "id": "66f95126bb02136c067c5070",
+      "domain": "Multi-Document QA",
+      "length": "short",
+      "gold": "C",
+      "context_tokens": 27030,
+      "semvec_input_tokens": 2368,
+      "semvec_pred": "D",
+      "naive_input_tokens": 27176,
+      "naive_pred": "C"
+    },
+    {
+      "id": "6701cda0bb02136c067cb6eb",
+      "domain": "Multi-Document QA",
+      "length": "short",
+      "gold": "A",
+      "context_tokens": 16895,
+      "semvec_input_tokens": 1970,
+      "semvec_pred": "C",
+      "naive_input_tokens": 17041,
+      "naive_pred": "C"
+    },
+    {
+      "id": "67062a63bb02136c067cf5ac",
+      "domain": "Long Structured Data Understanding",
+      "length": "short",
+      "gold": "C",
+      "context_tokens": 45542,
+      "semvec_input_tokens": 1979,
+      "semvec_pred": "B",
+      "naive_input_tokens": 45726,
+      "naive_pred": "A"
+    },
+    {
+      "id": "6723a1ccbb02136c067d70b3",
+      "domain": "Single-Document QA",
+      "length": "medium",
+      "gold": "D",
+      "context_tokens": 135558,
+      "semvec_input_tokens": 2616,
+      "semvec_pred": "D",
+      "naive_input_tokens": 135786,
+      "naive_pred": "D"
+    },
+    {
+      "id": "670aac92bb02136c067d218a",
+      "domain": "Single-Document QA",
+      "length": "medium",
+      "gold": "D",
+      "context_tokens": 138695,
+      "semvec_input_tokens": 568,
+      "semvec_pred": "D",
+      "naive_input_tokens": 138768,
+      "naive_pred": "B"
+    },
+    {
+      "id": "66ec0c4c821e116aacb1994a",
+      "domain": "Multi-Document QA",
+      "length": "medium",
+      "gold": "D",
+      "context_tokens": 64661,
+      "semvec_input_tokens": 2829,
+      "semvec_pred": "D",
+      "naive_input_tokens": 64787,
+      "naive_pred": "A"
+    },
+    {
+      "id": "66f920d8bb02136c067c4b81",
+      "domain": "Single-Document QA",
+      "length": "medium",
+      "gold": "C",
+      "context_tokens": 85215,
+      "semvec_input_tokens": 82,
+      "semvec_pred": "D",
+      "naive_input_tokens": 85297,
+      "naive_pred": "C"
+    },
+    {
+      "id": "6725dc28bb02136c067d8555",
+      "domain": "Long In-context Learning",
+      "length": "medium",
+      "gold": "D",
+      "context_tokens": 94317,
+      "semvec_input_tokens": 2433,
+      "semvec_pred": "A",
+      "naive_input_tokens": 94546,
+      "naive_pred": "C"
+    },
+    {
+      "id": "670cf1c0bb02136c067d26e5",
+      "domain": "Single-Document QA",
+      "length": "medium",
+      "gold": "A",
+      "context_tokens": 92858,
+      "semvec_input_tokens": 2190,
+      "semvec_pred": "C",
+      "naive_input_tokens": 92944,
+      "naive_pred": "C"
+    },
+    {
+      "id": "66ec3fa7821e116aacb1c75d",
+      "domain": "Long In-context Learning",
+      "length": "medium",
+      "gold": "B",
+      "context_tokens": 171760,
+      "semvec_input_tokens": 3850,
+      "semvec_pred": "B",
+      "naive_input_tokens": 171902,
+      "naive_pred": "B"
+    },
+    {
+      "id": "66ed875e821e116aacb2023e",
+      "domain": "Multi-Document QA",
+      "length": "medium",
+      "gold": "A",
+      "context_tokens": 62371,
+      "semvec_input_tokens": 1623,
+      "semvec_pred": "B",
+      "naive_input_tokens": 62468,
+      "naive_pred": "C"
+    },
+    {
+      "id": "67239fd9bb02136c067d6ff7",
+      "domain": "Single-Document QA",
+      "length": "medium",
+      "gold": "A",
+      "context_tokens": 134070,
+      "semvec_input_tokens": 2094,
+      "semvec_pred": "D",
+      "naive_input_tokens": 134314,
+      "naive_pred": "D"
+    },
+    {
+      "id": "66f2a414821e116aacb2a3af",
+      "domain": "Long Structured Data Understanding",
+      "length": "medium",
+      "gold": "B",
+      "context_tokens": 323370,
+      "semvec_input_tokens": 2327,
+      "semvec_pred": "C",
+      "naive_infeasible": true
+    },
+    {
+      "id": "67286634bb02136c067d91f0",
+      "domain": "Long In-context Learning",
+      "length": "medium",
+      "gold": "D",
+      "context_tokens": 147504,
+      "semvec_input_tokens": 904,
+      "semvec_pred": "B",
+      "naive_input_tokens": 147788,
+      "naive_pred": "D"
+    },
+    {
+      "id": "6725d977bb02136c067d8373",
+      "domain": "Long In-context Learning",
+      "length": "medium",
+      "gold": "A",
+      "context_tokens": 126779,
+      "semvec_input_tokens": 2174,
+      "semvec_pred": "A",
+      "naive_input_tokens": 126877,
+      "naive_pred": "A"
+    },
+    {
+      "id": "66f8d4b3bb02136c067c45c2",
+      "domain": "Single-Document QA",
+      "length": "medium",
+      "gold": "B",
+      "context_tokens": 85803,
+      "semvec_input_tokens": 1131,
+      "semvec_pred": "B",
+      "naive_input_tokens": 86306,
+      "naive_pred": "A"
+    },
+    {
+      "id": "66f659a8bb02136c067c1d68",
+      "domain": "Long Structured Data Understanding",
+      "length": "medium",
+      "gold": "A",
+      "context_tokens": 176361,
+      "semvec_input_tokens": 2003,
+      "semvec_pred": "A",
+      "naive_input_tokens": 176442,
+      "naive_pred": "A"
+    },
+    {
+      "id": "66f50109821e116aacb31f16",
+      "domain": "Multi-Document QA",
+      "length": "medium",
+      "gold": "B",
+      "context_tokens": 209683,
+      "semvec_input_tokens": 1999,
+      "semvec_pred": "C",
+      "naive_infeasible": true
+    },
+    {
+      "id": "670fb813bb02136c067d2bec",
+      "domain": "Single-Document QA",
+      "length": "medium",
+      "gold": "D",
+      "context_tokens": 75199,
+      "semvec_input_tokens": 450,
+      "semvec_pred": "D",
+      "naive_input_tokens": 75314,
+      "naive_pred": "D"
+    },
+    {
+      "id": "66f167c3821e116aacb274f4",
+      "domain": "Multi-Document QA",
+      "length": "medium",
+      "gold": "C",
+      "context_tokens": 200032,
+      "semvec_input_tokens": 2501,
+      "semvec_pred": "C",
+      "naive_infeasible": true
+    },
+    {
+      "id": "66ecfe1e821e116aacb1e41c",
+      "domain": "Single-Document QA",
+      "length": "medium",
+      "gold": "C",
+      "context_tokens": 67351,
+      "semvec_input_tokens": 1332,
+      "semvec_pred": "C",
+      "naive_input_tokens": 67595,
+      "naive_pred": "C"
+    },
+    {
+      "id": "67286698bb02136c067d9223",
+      "domain": "Long In-context Learning",
+      "length": "medium",
+      "gold": "C",
+      "context_tokens": 147504,
+      "semvec_input_tokens": 2273,
+      "semvec_pred": "B",
+      "naive_input_tokens": 147915,
+      "naive_pred": "C"
+    },
+    {
+      "id": "67285e1dbb02136c067d901b",
+      "domain": "Long Structured Data Understanding",
+      "length": "medium",
+      "gold": "A",
+      "context_tokens": 129738,
+      "semvec_input_tokens": 2441,
+      "semvec_pred": "B",
+      "naive_input_tokens": 129812,
+      "naive_pred": "A"
+    },
+    {
+      "id": "66fcffd9bb02136c067c94c5",
+      "domain": "Long In-context Learning",
+      "length": "long",
+      "gold": "D",
+      "context_tokens": 275310,
+      "semvec_input_tokens": 2018,
+      "semvec_pred": "D",
+      "naive_infeasible": true
+    },
+    {
+      "id": "66f94f9ebb02136c067c4fde",
+      "domain": "Multi-Document QA",
+      "length": "long",
+      "gold": "D",
+      "context_tokens": 463729,
+      "semvec_input_tokens": 2527,
+      "semvec_pred": "B",
+      "naive_infeasible": true
+    },
+    {
+      "id": "66fa208bbb02136c067c5fc1",
+      "domain": "Code Repository Understanding",
+      "length": "long",
+      "gold": "B",
+      "context_tokens": 658895,
+      "semvec_input_tokens": 2342,
+      "semvec_pred": "B",
+      "naive_infeasible": true
+    },
+    {
+      "id": "66ec56dd821e116aacb1cd0e",
+      "domain": "Code Repository Understanding",
+      "length": "long",
+      "gold": "C",
+      "context_tokens": 1126308,
+      "semvec_input_tokens": 1741,
+      "semvec_pred": "B",
+      "naive_infeasible": true
+    },
+    {
+      "id": "66ebd55f5a08c7b9b35e0698",
+      "domain": "Single-Document QA",
+      "length": "long",
+      "gold": "A",
+      "context_tokens": 320572,
+      "semvec_input_tokens": 2078,
+      "semvec_pred": "A",
+      "naive_infeasible": true
+    },
+    {
+      "id": "66f8c9febb02136c067c4511",
+      "domain": "Multi-Document QA",
+      "length": "long",
+      "gold": "C",
+      "context_tokens": 228424,
+      "semvec_input_tokens": 2290,
+      "semvec_pred": "D",
+      "naive_infeasible": true
+    },
+    {
+      "id": "66f61d7dbb02136c067c1802",
+      "domain": "Multi-Document QA",
+      "length": "long",
+      "gold": "D",
+      "context_tokens": 258872,
+      "semvec_input_tokens": 392,
+      "semvec_pred": "B",
+      "naive_infeasible": true
+    },
+    {
+      "id": "66f3f46f821e116aacb2ff5d",
+      "domain": "Multi-Document QA",
+      "length": "long",
+      "gold": "B",
+      "context_tokens": 257208,
+      "semvec_input_tokens": 2266,
+      "semvec_pred": "D",
+      "naive_infeasible": true
+    },
+    {
+      "id": "66f40b9c821e116aacb30a99",
+      "domain": "Multi-Document QA",
+      "length": "long",
+      "gold": "C",
+      "context_tokens": 428050,
+      "semvec_input_tokens": 2492,
+      "semvec_pred": "C",
+      "naive_infeasible": true
+    },
+    {
+      "id": "6724631ebb02136c067d7300",
+      "domain": "Single-Document QA",
+      "length": "long",
+      "gold": "D",
+      "context_tokens": 346867,
+      "semvec_input_tokens": 1184,
+      "semvec_pred": "C",
+      "naive_infeasible": true
+    },
+    {
+      "id": "66f40e44821e116aacb30b45",
+      "domain": "Long In-context Learning",
+      "length": "long",
+      "gold": "C",
+      "context_tokens": 1465618,
+      "semvec_input_tokens": 1714,
+      "semvec_pred": "B",
+      "naive_infeasible": true
+    },
+    {
+      "id": "66fa3843bb02136c067c655d",
+      "domain": "Code Repository Understanding",
+      "length": "long",
+      "gold": "D",
+      "context_tokens": 1162673,
+      "semvec_input_tokens": 3092,
+      "semvec_pred": "D",
+      "naive_infeasible": true
+    },
+    {
+      "id": "66ee4c55821e116aacb21596",
+      "domain": "Single-Document QA",
+      "length": "long",
+      "gold": "D",
+      "context_tokens": 312880,
+      "semvec_input_tokens": 1958,
+      "semvec_pred": "A",
+      "naive_infeasible": true
+    },
+    {
+      "id": "66faafd9bb02136c067c74a8",
+      "domain": "Long In-context Learning",
+      "length": "long",
+      "gold": "B",
+      "context_tokens": 623774,
+      "semvec_input_tokens": 336,
+      "semvec_pred": "C",
+      "naive_infeasible": true
+    },
+    {
+      "id": "66fcf8dfbb02136c067c92cc",
+      "domain": "Long In-context Learning",
+      "length": "long",
+      "gold": "C",
+      "context_tokens": 275285,
+      "semvec_input_tokens": 2034,
+      "semvec_pred": "D",
+      "naive_infeasible": true
+    },
+    {
+      "id": "67237d8ebb02136c067d6c06",
+      "domain": "Long Structured Data Understanding",
+      "length": "long",
+      "gold": "C",
+      "context_tokens": 470987,
+      "semvec_input_tokens": 2708,
+      "semvec_pred": "C",
+      "naive_infeasible": true
+    },
+    {
+      "id": "66f1dac1821e116aacb27df1",
+      "domain": "Code Repository Understanding",
+      "length": "long",
+      "gold": "A",
+      "context_tokens": 381039,
+      "semvec_input_tokens": 1799,
+      "semvec_pred": "D",
+      "naive_infeasible": true
+    },
+    {
+      "id": "66f2a4e3821e116aacb2a49b",
+      "domain": "Long In-context Learning",
+      "length": "long",
+      "gold": "B",
+      "context_tokens": 1228940,
+      "semvec_input_tokens": 4631,
+      "semvec_pred": "B",
+      "naive_infeasible": true
+    },
+    {
+      "id": "670cf52abb02136c067d2728",
+      "domain": "Single-Document QA",
+      "length": "long",
+      "gold": "A",
+      "context_tokens": 193594,
+      "semvec_input_tokens": 2236,
+      "semvec_pred": "A",
+      "naive_input_tokens": 193679,
+      "naive_pred": "D"
+    },
+    {
+      "id": "66f2a255821e116aacb2a20b",
+      "domain": "Long In-context Learning",
+      "length": "long",
+      "gold": "D",
+      "context_tokens": 1228940,
+      "semvec_input_tokens": 4274,
+      "semvec_pred": "C",
+      "naive_infeasible": true
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+# Test-only dependencies — the lightweight path.
+#
+# The suite is pure compute and aggregation logic: no GPU, no network, no LLM
+# and no Semvec licence. These four packages are all it needs, so the tests run
+# in seconds without pulling the ~6 GB ML stack from requirements.txt.
+#
+#   pip install -r requirements-test.txt && pytest tests/ -q
+#
+# The suite also passes with only PyYAML and pytest installed (tiktoken and
+# psutil are optional at runtime), but with them present it exercises the exact
+# token counter and core-count paths used for the committed measurements.
+
+PyYAML>=6.0.3        # verified: 6.0.3
+pytest>=9.1.0        # verified: 9.1.1
+tiktoken>=0.13.0     # verified: 0.14.0 — exact token counting
+psutil>=7.2.2        # verified: 7.2.2  — process/CPU sampling
